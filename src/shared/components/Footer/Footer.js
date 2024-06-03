@@ -13,9 +13,19 @@ const Footer = () => {
           <div className="footer-titles">
             <p>Awards And Registration</p>
             <p>Contact Us</p>
-            <p>9644362532</p>
-            <p>hrpriya786000@gmail.com</p>
-            <h4>Address : 1234 Harmony Lane, Bengaluru, Karnataka, India</h4>
+            <p>N abhi 9644362532</p>
+            <p>hr@sangamsahithi.com</p>
+          </div>
+          <div className="footer-address-container">
+            <div className="footer-address">
+              <h4>Registered Office:</h4>
+              <p>Suite 12, 32-33 Elmwood Ave, Co. Antrim, Belfast, BT96AZ, United Kingdom<br/>
+              +442895437886</p>
+            </div>
+            <div className="footer-address">
+              <h4>India Registered Office:</h4>
+              <p>F-160, First Floor, Corporate Wing, Fantasia Business Park, Sector 30B, Vashi Navi Mumbai,<br/>Maharashtra 400703</p>
+            </div>
           </div>
         </div>
         <div className="footer-menu-container">

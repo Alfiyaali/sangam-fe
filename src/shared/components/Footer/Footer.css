@@ -24,6 +24,22 @@
   padding: 5px;
 }
 
+.footer-address-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-address {
+  margin: 0 20px;
+  text-align: left;
+}
+
+.footer-address h4, .footer-address p {
+  margin: 5px 0;
+  padding: 5px;
+}
+
 .footer-menu-container {
   display: flex;
   justify-content: center;
@@ -71,5 +87,15 @@
   .footer-menu {
     width: calc(50% - 20px); /* Two items per row */
     margin: 10px;
+  }
+
+  .footer-address-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-address {
+    margin: 10px 0;
+    text-align: center;
   }
 }

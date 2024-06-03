@@ -17,10 +17,14 @@ const Contact = () => {
                     <div className="contact-info">
                         <p className='c-info'><strong>Email:</strong> info@yourdomain.com</p>
                         <p className='c-info'><strong>Phone:</strong> 9644362532</p>
-                        <p className='c-info'><strong>Email:</strong> hrpriya786000@gmail.com</p>
+                        <p className='c-info'><strong>Email:</strong> hr@sangamsahithi.com</p>
+                        <p className='c-info'><strong>Address (India):</strong></p>
+                        <p className='c-info'>F-160,First Floor, Corporate Wing<br />
+                        sector 30B,Vashi Navi Mumbai <br/>
+                        Maharashtra 400703 </p>
                         <p className='c-info'><strong>Address:</strong></p>
-                        <p className='c-info'>1234 Harmony Lane,<br />
-                            Bengaluru, Karnataka, India</p>
+                        <p className='c-info'>Suite 12,32-33. Elmwood Ave<br />
+                        United Kingdom,United Kingdom</p>
                     </div>
                 </div>
                 <div className="contact-right">
