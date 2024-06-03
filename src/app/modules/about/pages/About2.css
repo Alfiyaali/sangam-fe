@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&display=swap');
+.about-detail-container {
+  background: #FCE5F0;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-detail-columns {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+.about-detail-left {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-detail-left h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.about-detail-image-container {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the image container */
+}
+
+.circle {
+  position: absolute;
+  width: 20%;
+  height: auto;
+}
+
+.square {
+  position: absolute;
+  width: 30%;
+  height: auto;
+}
+
+.circle1 {
+  top: -25px;
+  left: -3px;
+  z-index: 0;
+}
+
+.main-image {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 72%;
+  height: auto;
+  top: 73%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.square2 {
+  bottom: -20px;
+  right: -65px;
+  z-index: 3;
+}
+
+.about-detail-right {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.about-detail-right .about-detail-text {
+  text-align: start;
+}
+
+.about-detail-right .about-detail-text .head {
+  color: #522B79;
+  font-size: 32px;
+  font-weight: 100;
+}
+.about-detail-right h1 {
+  font-weight: 100;
+  font-size: 24px;
+  color: #E33183;
+  font-family: 'Marko One', sans-serif;
+
+}
+
+.about-detail-paragraph {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.about-detail-paragraph p {
+  font-family: 'Playfair Display', serif;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  margin: 0;
+  text-align: start;
+  padding: 10px;
+}

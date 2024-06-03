@@ -1,0 +1,45 @@
+/* Scope the styles under .download-app-section */
+.download-app-section {
+  padding: 40px 0;
+  background-color: #EBEBEB;
+  font-family: 'Playfair Display', serif;
+}
+
+.dt-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-left: 50px; */
+}
+
+.dn-section-title {
+  margin-left: 20px;
+  color: #D23A30;
+}
+
+.logos-container {
+  display: flex;
+  gap: 10px; /* Adjust margin between logos */
+  margin-right: 30%;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .dt-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logos-container {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .dn-section-title {
+    margin: 20px 0;
+  }
+}

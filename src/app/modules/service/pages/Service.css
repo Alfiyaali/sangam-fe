@@ -1,0 +1,145 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.services-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-cover-image {
+    position: relative;
+    background: url('../../../../assets/images/service-cover.png') no-repeat center center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.welcome-heading {
+    color: #333;
+    font-size: 2.5em;
+    background: #FFEAF4;
+    padding: 38px 38px;
+    border-radius: 50%; /* Use border-radius to make it round */
+    margin: 0;
+    position: absolute;
+    bottom: -30px;
+    left: 50%; /* Center the circle */
+    transform: translateX(-50%); /* Center the circle */
+}
+
+.centered-heading {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    font-weight: 400;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color as necessary */
+    font-size: 3em; /* Adjust size as necessary */
+    /* background: rgba(0, 0, 0, 0.5); Optional: Add a semi-transparent background */
+    padding: 10px 20px; /* Optional: Add padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.services-content {
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    background: #FFEAF4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-heading, .services-subheading {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 21px;
+    font-size: 1.8em;
+}
+
+.service-find-stories {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto;
+}
+
+.service-find-story {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 10px 0; /* Separate items */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Centered alignment and limit max-width */
+}
+
+.service-find-story img {
+    margin: 0 10px; /* Margin for the icon */
+}
+
+.service-bullet-icon {
+    width: 63px;
+    height: 63px;
+    margin-top: 5px; /* Align icon with text */
+}
+
+.service-story-content {
+    color: #50DADA;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-story-content-cn {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    margin-left: 65px;
+}
+
+.service-story-content-cn h4 {
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+.service-find-story h4 {
+    margin: 0 1px 5px;
+    font-size: 18px;
+    color: #50DADA;
+}
+
+.service-find-story p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+.services-paragraph-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.services-paragraph {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #000000;
+}

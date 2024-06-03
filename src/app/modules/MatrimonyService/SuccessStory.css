@@ -1,0 +1,81 @@
+/* SuccessStory.css */
+
+.success-story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  max-width: 300px;
+  margin: 15px;
+  background-color: #fff;
+  border: 1px solid #F51E92;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(245, 30, 146, 0.2);
+  text-align: center;
+  overflow: visible; /* Ensure pseudo-elements are visible */
+}
+
+.success-story::after {
+  content: "";
+  position: absolute;
+  left: -11px; /* Adjusted to position slightly outside the left border */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #F51E92;
+  border-radius: 50%;
+  background-color: #F51E92;
+}
+
+.success-story-image {
+  padding: 10px;
+  height: 140px;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.success-story-content {
+  padding: 5px;
+}
+
+.success-story-title {
+  font-size: 16px;
+  color: #333;
+  margin: 1px auto;
+}
+
+.success-story-content {
+  font-size: 16px;
+  color: #777;
+}
+
+.success-story-description {
+  padding: 1px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .success-story {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .success-story-image {
+    height: auto;
+    width: 95%;
+    object-fit: contain;
+  }
+
+  .success-story-title {
+    font-size: 18px;
+  }
+
+  .success-story-content {
+    font-size: 14px;
+  }
+
+  .success-story-description {
+    font-size: 14px;
+  }
+}

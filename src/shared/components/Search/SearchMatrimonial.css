@@ -1,0 +1,102 @@
+/* Scope the styles under .search-matrimonial */
+.search-matrimonial {
+  background-color: #FCE5F0;
+  padding: 40px 0;
+  font-family: 'Playfair Display', serif;
+  margin-top: 30px;
+}
+
+.search-matrimonial .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-matrimonial .heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-matrimonial .heading p {
+  font-size: 22px;
+  color: #333;
+  font-family: 'Playfair Display', serif;
+}
+
+.search-matrimonial .cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Adjust to wrap cards */
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-matrimonial .card {
+  width: calc(50% - 20px); /* Adjust width to fit two cards in a row */
+  max-width: 280px; /* Set maximum width for responsiveness */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.search-matrimonial .card h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-matrimonial .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #D9D9D9;
+  margin-bottom: 10px;
+}
+
+.search-matrimonial .card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  overflow: auto;
+  padding: 14px;
+}
+
+.search-matrimonial .card .c-head {
+  font-size: 18px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .search-matrimonial {
+    
+    margin-top: 0px;
+  }
+  .search-matrimonial .card {
+    width: 70%; /* Adjust card width to fit in one column */
+    max-width: none; /* Remove max-width */
+    font-size: 32px;
+    padding: 10px;
+    margin: 15px;
+    height: 450px;
+   
+  }
+
+  .search-matrimonial .card p {
+    
+    font-size: 18px;
+   
+   
+  }
+  .search-matrimonial .card .c-head {
+    font-size: 22px;
+}
+}

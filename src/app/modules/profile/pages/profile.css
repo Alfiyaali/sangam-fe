@@ -1,0 +1,122 @@
+.profile-section {
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff; /* White background for the entire section */
+  }
+  
+  .progress-bar {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    /* margin-bottom: 20px; */
+  }
+  
+  .progress-bar div {
+    width: 20%; /* Divide the progress bar into equal sections */
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #ccc; /* Set default background color for progress bar items */
+  }
+  
+  .progress-bar .current {
+    background-color: #000; /* Black color for active progress bar item */
+  }
+  
+  .page {
+    padding: 30px;
+    width: 50%; /* Form width set to 50% of the parent container */
+    max-width: 1200px; /* Maximum width of the form */
+    box-sizing: border-box;
+  }
+  
+  .page h2 {
+    margin-bottom: 20px;
+     font-family: 'DM Sans', sans-serif;
+
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width:70%
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .row input {
+    flex: 1;
+  }
+  
+  .profile-buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .profile-button {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000000;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .profile-button.selected {
+    background-color: #FF4D6A;
+    color: #fff;
+  }
+  
+  .next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6DD6D6;
+    color: #fff;
+    /* margin-top: 10px; */
+    display: block;
+    margin: 0 auto;
+    width:50%
+  }
+  
+  button.finish-button {
+    background-color: #4CAF50;
+  }
+  
+  button + button {
+    margin-left: 10px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* .next-button {
+   
+  } */

@@ -1,0 +1,209 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); */
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-image: url('../../../assets/images/cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: #fff;
+  margin-left: 70px;
+  /* padding: 20px; */
+  max-width: 1200px;
+  margin-top: 70px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  line-height: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 .dm-sans-font {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  display: inline;
+}
+
+.hero-content h1 span.highlight {
+  color: #D23A30;
+}
+
+.search-intro {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 65px;
+  border-radius: 2px;
+  display: inline-block;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #6DD6D6;
+}
+
+.search-form {
+    margin-top: 25px;
+  width: 100%; /* Full width of the container */
+  max-width: 1200px; /* Increase maximum width of the form */
+  /* margin: 0 auto; Center the form */
+  padding: 20px 35px; /* Adjust padding */
+  font-family: 'Playfair Display', serif;
+  border-radius: 20px;
+  background-color: white; /* Background color for the entire form */
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Proper padding */
+  border-radius: 10px; /* Rounded corners */
+  background-color: white; /* Background color for the row */
+}
+
+.search-row .select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px; /* Space between select groups */
+  color: #000000;
+}
+
+.search-row .s-header {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #000000;
+
+}
+
+.search-row select,
+.search-row input[type="text"] {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  color: #939393;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Space between elements */
+}
+
+.search-row select {
+  width: 220px; /* Adjust width for larger select boxes */
+}
+
+.cta-button {
+  padding: 5px 46px; /* Adjust padding */
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  background-color:#6DD6D6;
+  color: black;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 25px; /* Add margin for spacing */
+  font-weight: 700;
+}
+
+
+
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo img {
+  margin-left: 65px;
+  height: 60px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.auth-buttons .login-button,
+.auth-buttons .help-button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.auth-buttons .login-button:hover,
+.auth-buttons .help-button:hover {
+  background-color: white;
+  color: #D23A30;
+  transition: background-color 0.3s, color 0.3s;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  
+
+  .hero-content h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .search-intro {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .search-form {
+    padding: 10px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .search-row {
+    flex-direction: column; /* Stack inputs vertically */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .search-row .select-group {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .search-row select,
+  .search-row input[type="text"] {
+    /* width: 100%; Make inputs full width */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+
+  .logo img {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+  }
+
+  .auth-buttons {
+    margin-right: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+

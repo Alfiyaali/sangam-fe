@@ -1,0 +1,62 @@
+.navigation {
+  /* background-color: #f8f8f8; Navigation background color */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  margin: 0 7px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white; /* Navigation link color */
+  font-size: 1em;
+  padding: 10px 20px;
+  display: block;
+}
+
+.navigation a.active,
+.navigation a:hover {
+  color: #ff6f61; /* Hover and active link color */
+  background-color: #fff; /* Background color on hover */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.button-link {
+  font-family: 'Playfair Display', serif;
+  padding: 10px 20px;
+  background-color: #fff;
+  color:#000000 !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #ff6f61 !important; /* Change text color on hover */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .navigation ul {
+    flex-direction: row; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .navigation li {
+    margin: 5px 2px; /* Add margin between items */
+  }
+
+  .navigation li:not(.essential-link) {
+    display: none; /* Hide non-essential links */
+  }
+}

@@ -1,0 +1,55 @@
+/* Scope the styles under .trusted-by-millions-section */
+.trusted-by-millions-section {
+  padding: 40px 20px; /* Adjust padding for mobile */
+  font-family: 'Playfair Display', serif;
+  background: #EBEBEB;
+  text-align: center;
+}
+
+.trusted-by-millions-content {
+  display: flex;
+  flex-direction: column; /* Stack button and text vertically on mobile */
+  align-items: center; /* Center button and text horizontally */
+  max-width: 600px; /* Limit the width of the container for better readability */
+  margin: 0 auto;
+}
+
+.trusted-by-millions-button {
+  background-color: #22B8B8;
+  font-family: 'Playfair Display', serif;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Add margin to the bottom for spacing */
+}
+
+.trusted-by-millions-button:hover {
+  background-color: #1a8a8a;
+}
+
+.section-p {
+  color: #000000;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px; /* Adjust font size for mobile */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center text */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .trusted-by-millions-section {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .trusted-by-millions-button {
+    font-size: 16px; /* Adjust button font size for smaller screens */
+  }
+
+  .section-p {
+    font-size: 14px; /* Adjust paragraph font size for smaller screens */
+  }
+}

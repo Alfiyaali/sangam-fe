@@ -1,0 +1,102 @@
+.find-story:first-child {
+  border-top: 1px solid #FD95FF;
+  border-right: 1px solid #FD95FF;
+  border-bottom: 1px solid #FD95FF;
+}
+.find-story:nth-child(2) {
+  border-left: 1px solid #FD95FF;
+}
+.find-story:last-child {
+  border-top: 1px solid #FD95FF;
+  border-right: 1px solid #FD95FF;
+  border-bottom: 1px solid #FD95FF;
+}
+.find-service {
+  background: white;
+}
+.find-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.find-story {
+  margin-left: 20px;
+  display: flex;
+  padding: 10px;
+  border-radius: 2px;
+}
+.find-story img {
+  margin-right: 10px; /* Margin for the icon */
+  margin-left: 10px;
+}
+.bullet-icon {
+  width: 63px;
+  height: 63px;
+  margin-top: 5px; /* Align the icon with the text */
+}
+.story-content {
+  color: #50DADA;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif;
+}
+.story-content-cn {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display', serif;
+  margin-left: 65px;
+}
+.story-content-cn h4 {
+  align-self: end;
+  margin-right: 5px;
+}
+.find-story h4 {
+  margin: 0 1px 5px;
+  font-size: 18px;
+  color: #50DADA;
+}
+.find-story p {
+  margin: 0;
+  font-size: 14px;
+  color: #000000;
+}
+.dividers {
+  border-left: 6px solid #39D3D3;
+  height: 340px;
+  margin: 30px 20px;
+}
+.title-columns {
+  margin-left: 30px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 300px; /* Set the same height as the divider */
+  font-family: 'Playfair Display', serif;
+}
+.section-titles {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+.section-titles .highlight {
+  color: #F51E92;
+}
+@media only screen and (max-width: 767px) {
+  .find-container {
+    flex-direction: column;
+  }
+  .title-columns {
+    margin-left: 0;
+    height: auto;
+    order: 1; /* Change order for mobile */
+  }
+  .success-storiess-column {
+    order: 2; /* Change order for mobile */
+  }
+  .dividers {
+    display: none; /* Hide divider in mobile view */
+  }
+}

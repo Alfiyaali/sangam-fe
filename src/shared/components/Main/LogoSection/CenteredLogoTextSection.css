@@ -1,0 +1,37 @@
+/* Scope the styles under .centered-logo-text-section */
+.centered-logo-text-section {
+  background-color: #fff;
+  padding: 40px 20px; /* Default padding */
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.centered-logo-text-section h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.center-logo {
+  width: 100px; /* Default size */
+  margin-bottom: 20px;
+}
+
+.centered-logo-text-section p {
+  max-width: 100%;
+  margin: 24px auto;
+  font-size: 16px; /* Default font size */
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .centered-logo-text-section {
+    padding: 20px; /* Adjusted padding for mobile */
+  }
+
+  .centered-logo-text-section p {
+    font-size: 14px; /* Adjusted font size for mobile */
+    margin: 5px;
+    padding: 5px;
+  }
+}
