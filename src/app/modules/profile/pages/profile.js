@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './profile.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const Profile = () => {
   const [step, setStep] = useState(1);
@@ -13,12 +15,16 @@ const Profile = () => {
   const [collegeName, setCollegeName] = useState('');
   const [workExperience, setWorkExperience] = useState('');
   const [jobTitle, setJobTitle] = useState('');
-
+const navigate = useNavigate();
   const nextStep = () => {
     setStep(prevStep => prevStep + 1);
   };
-
+const handleRoute = () => {
+  navigate("/")
+}
   return (
+    <>
+
     <section className="profile-section">
       <div className="progress-bar">
         <div className={step >= 1 ? 'current' : ''}></div>
@@ -28,8 +34,8 @@ const Profile = () => {
       {step === 1 && (
         <div className="page">
           <h2>Let’s get started</h2>
-          <p>We will help you to find the perfect match based on the details you enter here</p>
-          <form>
+          <p className='profile-sub-heading'>We will help you to find the perfect match based on the details you enter here</p>
+          <form className='profile-form'>
             <div className="form-group">
               <label>Profile created for*</label>
               <div className="profile-buttons">
@@ -45,14 +51,14 @@ const Profile = () => {
                 ))}
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group profile-name">
               <label>Name*</label>
               <div className="row">
                 <input type="text" placeholder="First Name" />
                 <input type="text" placeholder="Last Name" />
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group profile-space">
               <label>Date of Birth*</label>
               <div className="row">
                 <input type="text" placeholder="Day" />
@@ -60,7 +66,7 @@ const Profile = () => {
                 <input type="text" placeholder="Year" />
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group profile-space">
               <label>Height*</label>
               <div className="row">
                 <input type="text" placeholder="Feet" />
@@ -77,7 +83,7 @@ const Profile = () => {
           <form>
             <div className="form-group">
               <label>Marital status*</label>
-              <select
+              <select className='input-space'
                 value={maritalStatus}
                 onChange={e => setMaritalStatus(e.target.value)}
               >
@@ -87,9 +93,9 @@ const Profile = () => {
                 <option value="Divorced">Divorced</option>
               </select>
             </div>
-            <div className="form-group">
+            <div className="form-group ">
               <label>Mother Tongue*</label>
-              <select
+              <select className='input-space'
                 value={motherTongue}
                 onChange={e => setMotherTongue(e.target.value)}
               >
@@ -99,9 +105,9 @@ const Profile = () => {
                 <option value="French">French</option>
               </select>
             </div>
-            <div className="form-group">
+            <div className="form-group ">
               <label>Community*</label>
-              <select
+              <select className='input-space'
                 value={community}
                 onChange={e => setCommunity(e.target.value)}
               >
@@ -113,11 +119,11 @@ const Profile = () => {
             </div>
             <div className="form-group">
               <label>Current location*</label>
-              <input type="text" />
+              <input className='input-space' type="text" />
             </div>
             <div className="form-group">
               <label>Native place*</label>
-              <input type="text" />
+              <input className='input-space' type="text" />
             </div>
             <button type="button" className="next-button" onClick={nextStep}>Next</button>
           </form>
@@ -144,18 +150,19 @@ const Profile = () => {
             </div>
             <div className="form-group">
               <label>College Name</label>
-              <input type="text" />
+              <input className='input-space' type="text" />
             </div>
             <div className="form-group">
               <label>Work Experience</label>
-              <input type="text" />
+              <input className='input-space' type="text" />
             </div>
           
-            <button type="button" className="next-button" onClick={nextStep}>Next</button>
+            <button type="button" className="next-button" onClick={handleRoute}>Next</button>
           </form>
         </div>
       )}
     </section>
+    </>
   );
 };
 

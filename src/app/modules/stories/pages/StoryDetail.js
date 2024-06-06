@@ -9,6 +9,7 @@ import story5 from '../../../../assets/images/story-5.png';
 import rectangleImage1 from '../../../../assets/images/rectangle-story.png'; // Import your rectangle images
 // import rectangleImage2 from '../../../../assets/images/rectangle2.png'; // Import your rectangle images
 import Footer from '../../../../shared/components/Footer/Footer';
+import HeaderContent from '../../../../shared/components/Header/HeaderContent';
 
 const StoryDetail = () => {
   const { id } = useParams();
@@ -49,6 +50,7 @@ const StoryDetail = () => {
 
   return (
     <> 
+     <HeaderContent/> 
        <div className="story-detail-container">
       <div className="story-detail-content">
         <div className="story-detail-image-container">

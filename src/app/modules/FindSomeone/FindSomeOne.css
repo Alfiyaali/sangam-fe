@@ -13,14 +13,18 @@
 }
 .find-service {
   background: white;
+  padding-top: 125px;
 }
 .find-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background: white;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+}
+.find-stories {
+  padding-top: 20px;
 }
 .find-story {
   margin-left: 20px;
@@ -31,10 +35,20 @@
 .find-story img {
   margin-right: 10px; /* Margin for the icon */
   margin-left: 10px;
+  position: relative;
+}
+.icon-wrapper .design-icon {
+  position: absolute;
+  left: 26px;
+  top: 70px;
+}
+.icon-wrapper {
+  position: relative;
 }
 .bullet-icon {
-  width: 63px;
-  height: 63px;
+  width: 100px;
+  height: 107px;
+  margin-top: 5px;
   margin-top: 5px; /* Align the icon with the text */
 }
 .story-content {
@@ -42,6 +56,9 @@
   display: flex;
   flex-direction: column;
   font-family: 'Playfair Display', serif;
+}
+.success-storiess-column{
+  width: 50%;
 }
 .story-content-cn {
   display: flex;
@@ -55,18 +72,19 @@
 }
 .find-story h4 {
   margin: 0 1px 5px;
-  font-size: 18px;
+  font-size: 1.6rem;
   color: #50DADA;
 }
 .find-story p {
   margin: 0;
-  font-size: 14px;
+  font-size: 1.3rem;
   color: #000000;
+  
 }
 .dividers {
   border-left: 6px solid #39D3D3;
-  height: 340px;
-  margin: 30px 20px;
+  min-height: 500px;
+  margin: 0px 50px;
 }
 .title-columns {
   margin-left: 30px;
@@ -77,7 +95,7 @@
   font-family: 'Playfair Display', serif;
 }
 .section-titles {
-  font-size: 24px;
+  font-size: 3rem;
   color: #333;
   text-align: center;
 }

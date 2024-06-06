@@ -1,11 +1,15 @@
-.start-by-millions-section {
+.start-by-millions-wrapper{
     display: flex;
     padding: 40px 0;
     font-family: 'Playfair Display', serif;
     background: #FF4D77;
     text-align: center;
   }
-  
+  .start-by-millions-section{
+    padding-top: 70px;
+    padding-bottom: 45px;
+  background-color: white;
+  }
   .start-by-millions-content {
     margin-left: 25px;
     /* display: flex;
@@ -21,9 +25,9 @@
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
     border: none;
-    padding: 8px 20px; /* Adjusted padding */
-    font-size: 16px; /* Adjusted font size */
-    max-width: 200px; /* Limiting the maximum width */
+    padding:18px 45px; /* Adjusted padding */
+    font-size: 2.25rem; /* Adjusted font size */
+    max-width: 300px; /* Limiting the maximum width */
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
@@ -35,7 +39,7 @@
   }
   
   .start-by-millions-text {
-    font-size: 20px;
+    font-size: 2.25rem; 
     color: #FFFFFF;
     flex-grow: 1; /* Use flex-grow to distribute remaining space */
   }

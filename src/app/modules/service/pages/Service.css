@@ -22,16 +22,22 @@ body {
     align-items: flex-end;
     justify-content: center;
 }
-
+.welcome-text{
+    z-index: 99;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 63.98px;
+    margin-bottom: 0;
+}
 .welcome-heading {
     color: #333;
     font-size: 2.5em;
     background: #FFEAF4;
-    padding: 38px 38px;
+    padding: 140px 140px;
     border-radius: 50%; /* Use border-radius to make it round */
     margin: 0;
     position: absolute;
-    bottom: -30px;
+    bottom: -130px;
     left: 50%; /* Center the circle */
     transform: translateX(-50%); /* Center the circle */
 }
@@ -40,11 +46,11 @@ body {
     font-family: 'Playfair Display', serif;
     position: absolute;
     font-weight: 400;
-    top: 38%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; /* Adjust color as necessary */
-    font-size: 3em; /* Adjust size as necessary */
+    font-size: 6rem; /* Adjust size as necessary */
     /* background: rgba(0, 0, 0, 0.5); Optional: Add a semi-transparent background */
     padding: 10px 20px; /* Optional: Add padding */
     border-radius: 10px; /* Optional: Add rounded corners */
@@ -52,8 +58,6 @@ body {
 
 .services-content {
     width: 100%;
-    max-width: 1500px;
-    padding: 20px;
     background: #FFEAF4;
     border-radius: 10px;
     display: flex;
@@ -64,9 +68,10 @@ body {
 .services-heading, .services-subheading {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    margin-top: 28px;
-    margin-bottom: 21px;
-    font-size: 1.8em;
+    margin-top: 125px;
+    margin-bottom: 55px;
+    font-size: 3rem;
+    z-index: 99;
 }
 
 .service-find-stories {
@@ -85,16 +90,28 @@ body {
     border-radius: 2px;
     margin: 10px 0; /* Separate items */
     width: 100%; /* Full width */
-    max-width: 600px; /* Centered alignment and limit max-width */
+   
 }
 
 .service-find-story img {
     margin: 0 10px; /* Margin for the icon */
 }
 
+  .icon-wrapper {
+    position: relative;
+  }
+  .back-design{
+    width: 66px;
+    height: 38px;
+    overflow: hidden;
+    position: absolute;
+    left: 31px;
+    top: 59px;
+    z-index: 999999;
+  }
 .service-bullet-icon {
-    width: 63px;
-    height: 63px;
+    width: 100px;
+    height: 107px;
     margin-top: 5px; /* Align icon with text */
 }
 
@@ -119,13 +136,13 @@ body {
 
 .service-find-story h4 {
     margin: 0 1px 5px;
-    font-size: 18px;
+    font-size: 2rem;
     color: #50DADA;
 }
 
 .service-find-story p {
     margin: 0;
-    font-size: 14px;
+    font-size: 1.5rem;
     color: #000000;
 }
 
@@ -137,9 +154,10 @@ body {
 
 .services-paragraph {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2em;
+    font-size: 2.25rem;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1300px;
     line-height: 1.6;
+    font-weight: 600;
     color: #000000;
 }

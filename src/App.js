@@ -18,32 +18,39 @@ import LoginSection from './app/modules/login/pages/Login';
 import Profile from './app/modules/profile/pages/profile';
 import StoryDetail from './app/modules/stories/pages/StoryDetail';
 import About2 from './app/modules/about/pages/About2';
+import Terms from './app/modules/Terms/Pages/Terms';
 import './App.css';
-
+import Privacy from './app/modules/privacy/pages/Privacy';
+import Online from './app/modules/privacy/pages/Online';
+import Missuse from './app/modules/Missuse/Pages/Missuse';
+import Header from './shared/components/Header/HeaderContent';
 const App = () => (
   <Router>
     <div className="app">
-    
+   
     
       <div className="content">
         <Routes>
+       
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/about2" element={<About2 />} />
-
+          <Route path="/about2" element={<About />} />
+          <Route path="/about" element={<About2 />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/services" element={<Services />} />
           <Route path="/story" element={<Stories />} />
           <Route path="/story/:id" element={<StoryDetail />} />
           <Route path="/career" element={<Career />} />
+          <Route path="/online" element={<Online />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<LoginSection />} />
           <Route path="/profile" element={<Profile />} />
-          {/* Add a default route to redirect to home */}
+          <Route path="/report" element={<Missuse />} />
+        
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
       </div>
       
-      {/* <Footer / */}
     </div>
   </Router>
 );

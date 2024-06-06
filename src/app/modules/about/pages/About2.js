@@ -5,10 +5,12 @@ import cirlce from '../../../../assets/images/abt-circle.png';
 import square from '../../../../assets/images/abt-square.png';
 import overlayImage from '../../../../assets/images/about-overlay.png'; // Add your new overlay image here
 import Footer from '../../../../shared/components/Footer/Footer';
+import HeaderContent from '../../../../shared/components/Header/HeaderContent';
 
 const About2 = () => {
   return (
     <>    
+    <HeaderContent/>
     <div className="about-detail-container">
       <div className="about-detail-columns">
         <div className="about-detail-left">
@@ -27,7 +29,8 @@ const About2 = () => {
         </div>
       </div>
       <div className="about-detail-paragraph">
-        <p>Sangam Sahithi was founded in 2018 by Rahul Sharma, driven by the vision to bridge the gap between tradition and modernity. Inspired by the joy and fulfillment of strong family bonds, Rahul created this platform to help others find happiness. Our mission is to provide comprehensive solutions that cater to diverse needs, from personalized matchmaking to flexible work options and efficient appointment scheduling.</p>
+        <p>Sangam Sahithi was founded in 2018 by Rahul Sharma, driven by the vision to bridge the gap between tradition and modernity. Inspired by the joy and fulfillment of strong family bonds, Rahul created this platform to help others find happiness. Our mission is to provide comprehensive solutions that cater to diverse needs, from personalized matchmaking to flexible work options and efficient appointment scheduling.<br/>
+        Sangam, the world's oldest and most successful matchmaking service, has been trusted since 1996 by people all over the world to help them find their soulmates. Today, hundreds of  thousands of  people have met their life partners through our revolutionary matchmaking service and countless others have made some very special friends.</p>
       </div>
     </div>
     <Footer/>

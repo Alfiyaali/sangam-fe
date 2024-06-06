@@ -1,0 +1,108 @@
+.banner-bg {
+  background: url(https://img2.shaadi.com/assests/2021/nl/offer/20210324/top-bg.jpg)
+    no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+}
+.safeshaadi_first {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.safeshaadi_first_content {
+  width: 50%;
+}
+.safeshaadi-heading {
+  font: 400 48px "Lato", sans-serif;
+  color: #51505d;
+}
+.safeshaadi-subheading {
+  font: 700 54px "Lato", sans-serif;
+  color: #00bcd5;
+}
+.safeshaadi_first_img {
+  width: 50%;
+}
+
+.safeshaadi_img img,
+.safeshaadi_first_img img {
+  width: 100%;
+  height: auto;
+}
+.blue-container {
+  background-color: #f7feff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: -50px 0 0;
+  z-index: 2;
+  position: relative;
+}
+.safeshaadi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.safeshaadi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.safeshaadi_even .safeshaadi_content {
+  order: 2;
+}
+.safeshaadi_content {
+  width: 49%;
+  order: 1;
+}
+.left-padding {
+  padding: 0 0 0 40px;
+}
+.safeshaadi-content-heading {
+  font: 700 36px "Lato", sans-serif;
+  color: #51505d;
+  background: url(https://img2.shaadi.com/assests/2021/nl/offer/20210324/gradient-border.jpg)
+    no-repeat left bottom;
+  padding: 0 0 12px;
+}
+.bold-font {
+  font-weight: 700;
+}
+.safeshaadi-content {
+  font: 400 18px "Lato", sans-serif;
+  color: #72727c;
+  padding: 21px 0 0;
+}
+.safeshaadi-small-heading {
+  font: 700 20px "Lato", sans-serif;
+  color: #51505d;
+}
+.readMoreBlock {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s ease-in-out;
+}
+.safeshaadi_even .safeshaadi_img {
+  order: 1;
+}
+
+.safeshaadi_img {
+  width: 51%;
+  order: 2;
+}
+.separator {
+  padding: 0 0 50px;
+}
+.safeshaadi_img img,
+.safeshaadi_first_img img {
+  width: 100%;
+  height: auto;
+}
+.footer-inner {
+  font: 400 14px "Lato", sans-serif;
+  padding: 10px 0 50px 5px;
+  color: #72727c;
+}

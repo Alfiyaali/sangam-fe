@@ -6,8 +6,9 @@ const CenteredLogoTextSection = () => {
   return (
     <section className="centered-logo-text-section">
       <img src={Logo} alt="Sangam Sahithi" className="center-logo" />
+      <p className='centered-logo-head'>Contact us Today!!</p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus, lorem ut bibendum molestie, dui sem tristique nulla, vel consequat odio eros et tortor. Interdum et malesuada fames ac ante.
+      Looking for premium matrimonial matches? Discover Sangam Sahithi's exclusive services for a perfect match. Contact us today!
       </p>
     </section>
   );

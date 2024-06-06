@@ -4,6 +4,7 @@ import './Navigation.css';
 
 const Navigation = () => (
   <nav className='navigation'>
+    
     <ul>
      
       <li className="non-essential-link"><Link to="/services">Services</Link></li>

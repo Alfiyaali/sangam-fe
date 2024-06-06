@@ -26,11 +26,11 @@ body {
 }
 
 .about-cover-image h1 {
-    color: #333;
-    font-size: 2.5em;
+    color: hsl(0, 0%, 20%);
+    font-size: 4rem;
     background: #FFEAF4;
-    padding: 15px 25px;
-    border-radius: 5px;
+    padding: 35px 150px;
+    border-radius:37px 37px 0px 0px;
     margin: 3px;
     position: absolute;
     bottom: -7px;
@@ -59,11 +59,11 @@ body {
 }
 
 .about-paragraph {
-    font-size: 25px;
+    font-size: 2rem;
     margin: 0 auto;
     padding: 20px;
     max-width: 800px; /* This ensures the paragraph doesn't stretch too wide on large screens */
-    line-height: 1.6;
+    line-height:42.66px;
     color: #000000;
     font-weight: 500;
 

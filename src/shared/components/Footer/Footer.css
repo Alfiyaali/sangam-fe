@@ -1,58 +1,71 @@
 .footer {
   background-color: #FFFFFF;
   color: #333;
+  font-family: "DM Sans";
   padding: 40px 20px; /* Adjust padding for smaller screens */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-}
-
-.footer-left {
-  text-align: center;
 }
 
 .footer-logo img {
   height: 65px;
+  margin-bottom: 80px;
 }
 
 .footer-titles h4, .footer-titles p {
   margin: 0;
   padding: 5px;
+  font-size: 1.5rem;
 }
 
 .footer-address-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
   margin-top: 20px;
+  font-size: 12px;
 }
 
 .footer-address {
-  margin: 0 20px;
-  text-align: left;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-address h4, .footer-address p {
   margin: 5px 0;
-  padding: 5px;
+  padding: 1px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-left {
+  width: 30%;
 }
 
 .footer-menu-container {
   display: flex;
-  justify-content: center;
+  width: 70%;
 }
 
 .footer-menu {
-  width: 200px; /* Set a fixed width for each menu item */
-  margin: 0 10px;
+  width: 100%; /* Set a fixed width for each menu item */
+  margin: 0 20px;
 }
 
 .footer-menu h3 {
-  font-size: 1.2em;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 20px;
+  font-family: 'DM Sans', sans-serif;
+
 }
 
 .footer-menu ul {
@@ -65,8 +78,10 @@
 }
 
 .footer-menu ul li a {
-  color: #333;
+  color: #4D4848;
   text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .footer-menu ul li a:hover {
@@ -79,11 +94,11 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-menu-container {
     flex-wrap: wrap;
   }
-  
+
   .footer-menu {
     width: calc(50% - 20px); /* Two items per row */
     margin: 10px;
@@ -93,7 +108,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-address {
     margin: 10px 0;
     text-align: center;

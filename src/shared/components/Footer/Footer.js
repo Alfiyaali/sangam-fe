@@ -13,18 +13,17 @@ const Footer = () => {
           <div className="footer-titles">
             <p>Awards And Registration</p>
             <p>Contact Us</p>
-            <p>N abhi 9644362532</p>
-            <p>hr@sangamsahithi.com</p>
+            <p>Hr.priyasangam@gmail.com</p>
           </div>
           <div className="footer-address-container">
             <div className="footer-address">
-              <h4>Registered Office:</h4>
-              <p>Suite 12, 32-33 Elmwood Ave, Co. Antrim, Belfast, BT96AZ, United Kingdom<br/>
-              +442895437886</p>
+              <h4>India</h4>
+              <p>F-160, First Floor, Corporate Wing, Fantasia Business Park, sector 30B, Vashi Navi Mumbai, Maharashtra 400703</p>
             </div>
             <div className="footer-address">
-              <h4>India Registered Office:</h4>
-              <p>F-160, First Floor, Corporate Wing, Fantasia Business Park, Sector 30B, Vashi Navi Mumbai,<br/>Maharashtra 400703</p>
+              <h4>Registered Office</h4>
+              <p>Suite 12, 32-33 Elmwood Ave, Co. Antrim, Belfast, BT96AZ, United Kingdom<br/>
+              +442895437886</p>
             </div>
           </div>
         </div>
@@ -48,12 +47,12 @@ const Footer = () => {
               <li><a href="Customer">Customer Support</a></li>
             </ul>
           </div>
-          {/* <div className="footer-menu">
+          <div className="footer-menu">
             <h3>More</h3>
             <ul>
-              <li><a href="Success">Success Stories</a></li>
+              <li><a href="success_stories">Success Stories</a></li>
             </ul>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>

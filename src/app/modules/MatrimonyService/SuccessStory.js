@@ -8,7 +8,7 @@ const SuccessStory = ({ imageSrc, title, description }) => {
       <div className="success-story-content">
         <h3 className="success-story-title">{title}</h3>
         <div >
-        <p className="success-story-description">{description}</p>
+        <p className="success-story-description">{description} <span className='read-more-text'>Read More</span></p>
 
         </div>
       </div>

@@ -12,13 +12,16 @@
 }
 
 .navigation li {
-  margin: 0 7px;
+ margin-right: 40px;
 }
-
+.navigation li:last-child {
+  margin-right: 0px !important;
+ }
 .navigation a {
+  font-family: 'Playfair Display', serif;
   text-decoration: none;
   color: white; /* Navigation link color */
-  font-size: 1em;
+  font-size: 1.188rem;
   padding: 10px 20px;
   display: block;
 }

@@ -1,0 +1,241 @@
+.careers {
+  width: 100%;
+  background-color: #fff;
+}
+
+.video-player {
+  width: 100%;
+}
+.video-wrapper {
+  position: relative;
+}
+.elementor-widget-wrap {
+  width: 50%;
+  position: absolute;
+  left: 100px;
+  top: 311px;
+}
+.elementor-heading-title1 {
+  color: #000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 61px;
+}
+.elementor-heading-title2 {
+  color: #656565;
+  font-family: "Roboto", Sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.35em;
+  letter-spacing: 1px;
+}
+.elementor-button {
+  background-color: #00bcd5;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.heading-wrapper {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.career-heading {
+  font-size: 48px;
+  font-weight: 500;
+  color: #000;
+}
+.container-box {
+  flex-direction: column;
+}
+#uncontrolled-tab-example {
+  width: 100%;
+}
+.careers .nav-link {
+  border-bottom: 0 !important;
+}
+.careers .active {
+    border-bottom: 0 !important;
+  }
+.know-text {
+  font-size: 24px;
+  color: #72727d;
+  margin-top: 40px;
+}
+.tab-content {
+  border: 1px solid #dee2e6;
+  padding: 0px 100px 0px 40px;
+  text-align: justify;
+}
+
+.box-wrapper{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     gap: 20px;
+     margin-top: 80px;
+     margin-bottom: 40px;
+}
+.know-box {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.main-text {
+    font-family: "Roboto", Sans-serif;
+    color: #51505d;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 42px;
+    margin-bottom: 0;
+}
+.sub-text {
+    color: #51505d;
+    font-family: "Roboto", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+.careers .sub-heading {
+    color: #656565;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+.sub-heading-wrapper {
+    width: 100%;
+   margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .careers .accordion {
+    border: 0 !important;
+    width: 100%;
+  }
+  .careers .accordion .accordion-item {
+    border: 0 !important;
+  }
+  .careers  .accordion .accordion-button {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: #656565;
+  }
+  .careers .accordion .accordion-button:focus {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .progression-body {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .progression-text{
+    font-size: 20px;
+    color: #656565;
+  }
+  .progression-left-container {
+    width: 50%;
+    padding: 40px;
+  }
+  .progression-right-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .letter-style{
+    font-style: italic;
+  }
+  .letter-highlight {
+    color: #656565;
+    font-style: italic;
+    font-weight: 700;
+  }
+  .progression-right-container img {
+    border-radius: 6px;
+    width: 300px;
+  }
+  .work-img {
+    border-radius: 6px;
+    width: 300px;
+  }
+  .culture-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .culture-left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+    width: 50%;
+
+  }
+  .culture-right-box {
+    padding:0 20px;
+    width: 50%;
+
+  }
+  .video-player-culture{
+    width: 80%;
+  }
+  .culture-heading{
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .culture-text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+  .culture-btn {
+    margin-top: 40px;
+    padding: 12px 24px !important;
+    background-color: #00bcd5 !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    border: 1px solid #00bcd5 !important;
+  }
+  .culture-btn:hover {
+    margin-top: 40px;
+    padding: 12px 24px !important;
+    background-color: #fff !important;
+    color: #00bcd5 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    border: 1px solid #00bcd5 !important;
+  }
+  .benefit-bg {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+
+  .know-bg {
+    background-color: #fff;
+    padding: 80px 0;
+  }

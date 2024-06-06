@@ -15,16 +15,18 @@
 .dn-section-title {
   margin-left: 20px;
   color: #D23A30;
+  font-size: 2.5rem;
 }
 
 .logos-container {
   display: flex;
+  align-items: center;
   gap: 10px; /* Adjust margin between logos */
-  margin-right: 30%;
 }
 
 .logo {
-  width: 100px; /* Adjust size as needed */
+  width: 174px;
+
 }
 
 /* Media query for mobile devices */

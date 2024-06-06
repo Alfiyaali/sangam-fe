@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.terms-section {
+    background: #FFEAF4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms-cover-image {
+    position: relative;
+    background: url('../../../../assets/images/about-cover.png') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.terms-cover-image h1 {
+    color: hsl(0, 0%, 20%);
+    font-size: 4rem;
+    background: #FFEAF4;
+    padding: 35px 150px;
+    border-radius:37px 37px 0px 0px;
+    margin: 3px;
+    position: absolute;
+    bottom: -7px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.terms-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background: #FFEAF4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.terms-paragraph-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.terms-paragraph {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px; /* This ensures the paragraph doesn't stretch too wide on large screens */
+    line-height:42.66px;
+    color: #000000;
+    font-weight: 500;
+
+}
+.service_agreement {
+  font-size: 16px;
+  line-height: 22px;
+   
+  }
+  .list_decimal {
+    padding: 0 0 0 20px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .list_decimal li {
+    list-style-type: decimal;
+    padding: 0 0 15px 0;
+    margin: 0;
+  }
+  .list_lower_alpha {
+    padding: 10px 0 0 30px;
+  }
+  .list_lower_alpha li {
+    padding: 0 0 10px 0;
+    list-style-type: lower-alpha !important;
+    margin: 0;
+  }
+  .list_lower_roman {
+    padding: 10px 0 0 30px;
+  }
+  .list_lower_roman li {
+    padding: 0 0 10px 0;
+    list-style-type: lower-roman !important;
+    margin: 0;
+  }
+  .last_element {
+    padding: 0 !important;
+  }
+  #pg_wrap {
+    width: 960px;
+    border: none;
+    margin: 0 auto;
+    padding: 30px 0;
+    font: 12px arial;
+    color: #72727d;
+}

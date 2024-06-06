@@ -8,6 +8,7 @@ import Image4 from '../../../../assets/images/story-4.png';
 import Image5 from '../../../../assets/images/story-5.png'; 
 import Image6 from '../../../../assets/images/story-image.png'; 
 import Footer from '../../../../shared/components/Footer/Footer';
+import HeaderContent from '../../../../shared/components/Header/HeaderContent';
 
 const Stories = () => {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ const Stories = () => {
 
   return (
     <>   
+    <HeaderContent/>
      <section className="st-section">
       <div className="container">
         <div className="heading">
