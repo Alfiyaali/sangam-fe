@@ -19,7 +19,7 @@ function DetailsModal({handleClose,show}) {
     <div>
          <Modal centered show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>Basic Information</Modal.Title>
+          <Modal.Title>Let's set up your account, while we find Matches for you!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         {step === 1 && ( 

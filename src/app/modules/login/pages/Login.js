@@ -1,8 +1,10 @@
 import React from 'react';
 import './Login.css';
+import Footer from '../../../../shared/components/Footer/Footer';
 
 const LoginSection = () => {
   return (
+    <>
     <section className="login-section">
       <div className="top-right-buttons">
         <button className="language-button">Choose Language</button>
@@ -36,6 +38,8 @@ const LoginSection = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 };
 

@@ -24,6 +24,7 @@ import Privacy from './app/modules/privacy/pages/Privacy';
 import Online from './app/modules/privacy/pages/Online';
 import Missuse from './app/modules/Missuse/Pages/Missuse';
 import Header from './shared/components/Header/HeaderContent';
+import CustomerSupport from './app/modules/customer/pages/CustomerSupport';
 const App = () => (
   <Router>
     <div className="app">
@@ -46,6 +47,9 @@ const App = () => (
           <Route path="/login" element={<LoginSection />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/report" element={<Missuse />} />
+          <Route path="/customer-support" element={<CustomerSupport />} />
+
+
         
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>

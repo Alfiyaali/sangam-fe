@@ -1,0 +1,58 @@
+    .custom-select {
+        position: relative;
+        width: 257px;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .custom-select-trigger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: white;
+        cursor: pointer;
+        font-size: 0.875rem;
+        color: #939393;
+    }
+    
+    .custom-select-trigger .arrow {
+        width: 0;
+        height: 0;
+        margin-left: 10px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #939393;
+    }
+    
+    .custom-options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 200px; /* Set max height for scrolling */
+        overflow-y: auto; /* Enable vertical scrolling */
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .custom-option {
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 0.875rem;
+        color: #939393;
+    }
+    
+    .custom-option:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .custom-option.selected {
+        background-color: #6DD6D6;
+        color: black;
+    }
+    
