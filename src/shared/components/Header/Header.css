@@ -68,7 +68,7 @@ body {
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 20px;
-  color: #6DD6D6;
+  color: #83e1ed;
 }
 
 .search-form {
@@ -126,8 +126,8 @@ body {
   font-size: 1.25rem;
   width: 257px;
   font-family: 'Playfair Display', serif;
-  background-color:#6DD6D6;
-  color: black;
+  background-color:  #83e1ed;
+  color: #fff;
   border: none;
   border-radius: 7px;
   cursor: pointer;

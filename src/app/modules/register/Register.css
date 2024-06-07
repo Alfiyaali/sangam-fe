@@ -1,0 +1,54 @@
+
+.register-page .form-main-div {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 0 auto;
+}
+
+.register-page label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.register-page input, .register-page select, .gender-options p, .relationship-options p {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.register-page .gender-options, .register-page .relationship-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register-page .gender-options p, .register-page .relationship-options p {
+    cursor: pointer;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30%;
+    margin-right: 10px;
+
+}
+
+.gender-options p:hover, .relationship-options p:hover {
+    background: #eee;
+}
+
+.register-page button {
+    background:  #83e1ed;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    margin: 10px 0px;
+}

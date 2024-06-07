@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer-titles">
             <p>Awards And Registration</p>
             <p>Contact Us</p>
-            <p>Hr.priyasangam@gmail.com</p>
+            <p>hr.sangamsahithi.com</p>
           </div>
           <div className="footer-address-container">
             <div className="footer-address">
@@ -40,8 +40,8 @@ const Footer = () => {
             <h3>Need Help</h3>
             <ul>
               <li><a href="/login">Member Login</a></li>
-              <li><a href="sgnup">Sign Up</a></li>
-              <li><a href="Partner">Partner Search</a></li>
+              <li><a href="/register">Sign Up</a></li>
+              <li><a href="/search">Partner Search</a></li>
               <li><a href="Premium">Premium Membership</a></li>
               <li><a href="/customer-support">Customer Support</a></li>
             </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="footer-menu">
             <h3>More</h3>
             <ul>
-              <li><a href="success_stories">Success Stories</a></li>
+              <li><a href="/story">Success Stories</a></li>
             </ul>
           </div>
         </div>

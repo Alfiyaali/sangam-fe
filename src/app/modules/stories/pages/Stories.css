@@ -1,93 +1,95 @@
 .st-section {
-    background-color: #FCE5F0;
-    padding: 40px 0;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .st-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .st-section .heading {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 100px;
-  }
-  
-  .st-section .heading p {
-  
-    font-size: 2.25rem;
-    color: #000000;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    line-height: 47.99px;
-  }
-  
-  .st-section .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 25px;
-  }
-  
-  .st-section .card {
-    width: 277px;
-    height: 393px; /* Increased height */
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #F51E92; /* Added border color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 40px 50px; /* Added margin for spacing */
-    padding: 10px;
-  }
-  
-  .st-section .card-image-container {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .st-section .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .st-section .card-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .st-section .card-title {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #000000;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .st-section .card-title span {
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  .st-section .card-description p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #000000;
-  }
-  
+  background-color: #FCE5F0;
+  padding: 40px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.st-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.st-section .heading {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.st-section .heading p {
+
+  font-size: 2.25rem;
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 47.99px;
+}
+
+.st-section .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.st-section .card {
+  width: 277px;
+  height: 393px;
+  /* Increased height */
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #F51E92;
+  /* Added border color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 40px 50px;
+  /* Added margin for spacing */
+  padding: 10px;
+}
+
+.st-section .card-image-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.st-section .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.st-section .card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.st-section .card-title {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Playfair Display', serif;
+}
+
+.st-section .card-title span {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.st-section .card-description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}

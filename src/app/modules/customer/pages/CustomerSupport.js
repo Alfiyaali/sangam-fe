@@ -21,7 +21,7 @@ function CustomerSupport() {
         <Accordion defaultActiveKey={["0"]} alwaysOpen>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-            <span className="numbers"> 1.</span>  How can I register on Shaadi.com?
+            <span className="numbers"> 1.</span>  How can I register on Sangam.com?
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
@@ -128,7 +128,7 @@ function CustomerSupport() {
                 You have been provided with tools to manage your information.
                 You have the rights to access, rectify, and update information
                 that you provided to us and that’s associated with your
-                shaadi.com account directly by logging into your account.
+                Sangam.com account directly by logging into your account.
                 <br />
                 <br />
                 In addition to the aforesaid customer control, a member from the
@@ -291,7 +291,7 @@ function CustomerSupport() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>
-            <span className="numbers"> 9.</span> How will I know of changes in Shaadi.com customer policy?
+            <span className="numbers"> 9.</span> How will I know of changes in Sangam.com customer policy?
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
@@ -310,7 +310,7 @@ function CustomerSupport() {
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>
-            <span className="numbers"> 10.</span>  Tell me how to contact Shaadi.com.
+            <span className="numbers"> 10.</span>  Tell me how to contact Sangam.com.
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
@@ -324,7 +324,7 @@ function CustomerSupport() {
                 or contact us at:
                 <br />
                 <br />
-                <b>Shaadi.com</b>
+                <b>Sangam.com</b>
                 <br />
                 Nidhi Singh - Grievance Officer, People Interactive (I) Pvt.
                 Ltd. 2(B) (ii) Ground Floor, Tardeo Annexe, Film Centre
@@ -336,7 +336,7 @@ function CustomerSupport() {
         <div className="footer_bot_border_wrapper padding_class_footer_bot_border_wrapper" style={{ padding: '15px !important' }}>
   <div className="footer_bot_border"></div>
 </div>
-<div class="copyright_txt"><span>© 1996-2024 Shaadi.com  - The World's No.1 Matchmaking Service™</span></div>
+<div class="copyright_txt"><span>© 1996-2024 Sangam.com  - The World's No.1 Matchmaking Service™</span></div>
       </div>
       </div>
       <Footer/>

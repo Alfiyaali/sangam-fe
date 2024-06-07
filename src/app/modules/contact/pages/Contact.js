@@ -28,7 +28,7 @@ const Contact = () => {
                     <div className="contact-info">
                         <p className='c-info'><strong className='icon'><img src={Email} alt='email' /></strong> info@yourdomain.com</p>
                         {/* <p className='c-info'><strong className='icon'><img src={Phone} alt='phone' /></strong> +442895437886</p> */}
-                        <p className='c-info'><strong className='icon'><img src={Global} alt='global' /></strong> Hr.priyasangam@gmail.com</p>
+                        <p className='c-info'><strong className='icon'><img src={Global} alt='global' /></strong> hr.sangamsahithi.com</p>
                         {/* <p className='c-info'><strong>Address (India):</strong></p>
                         <p className='c-info'>F-160,First Floor, Corporate Wing<br />
                         sector 30B,Vashi Navi Mumbai <br/>

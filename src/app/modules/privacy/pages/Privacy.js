@@ -21,12 +21,12 @@ function Privacy() {
         <Accordion defaultActiveKey={["0"]} alwaysOpen>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-            <span className="numbers"> 1.</span>  What information does Shaadi.com collect from you?
+            <span className="numbers"> 1.</span>  What information does Sanagam.com collect from you?
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
                 <div className="notch"></div>
-                Shaadi.com is an advertising platform providing targeted
+                Sangam.com is an advertising platform providing targeted
                 advertising services for the purpose of matchmaking (“Service”).
                 In order to provide the services, you (User/Member) are required
                 to submit certain personal information which is displayed on the
@@ -37,7 +37,7 @@ function Privacy() {
                 <br />
                 <br />
                 <b>
-                  Shaadi.com gathers three types of information while you are
+                  Sangam.com gathers three types of information while you are
                   availing our services:
                 </b>
                 <br />
@@ -139,7 +139,7 @@ function Privacy() {
                           <br />
                           You have an option to use your social media login
                           (such as Google SSO/Apple ID) to create and log into
-                          your Shaadi.com account. This saves you from
+                          your Sangam.com account. This saves you from
                           remembering one more login credential and allows you
                           to share some information from your social media
                           account with us.
@@ -244,7 +244,7 @@ function Privacy() {
                 You have been provided with tools to manage your information.
                 You have the rights to access, rectify, and update information
                 that you provided to us and that’s associated with your
-                shaadi.com account directly by logging into your account.
+                Sangam.com account directly by logging into your account.
                 <br />
                 <br />
                 In addition to the aforesaid privacy control, a member from the
@@ -407,7 +407,7 @@ function Privacy() {
           </Accordion.Item>
           <Accordion.Item eventKey="8">
             <Accordion.Header>
-            <span className="numbers"> 9.</span> How will I know of changes in Shaadi.com privacy policy?
+            <span className="numbers"> 9.</span> How will I know of changes in Sangam.com privacy policy?
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
@@ -426,7 +426,7 @@ function Privacy() {
           </Accordion.Item>
           <Accordion.Item eventKey="9">
             <Accordion.Header>
-            <span className="numbers"> 10.</span>  Tell me how to contact Shaadi.com.
+            <span className="numbers"> 10.</span>  Tell me how to contact Sangam.com.
             </Accordion.Header>
             <Accordion.Body>
               <div className="ans_box" style={{ display: "block" }}>
@@ -440,7 +440,7 @@ function Privacy() {
                 or contact us at:
                 <br />
                 <br />
-                <b>Shaadi.com</b>
+                <b>Sangam.com</b>
                 <br />
                 Nidhi Singh - Grievance Officer, People Interactive (I) Pvt.
                 Ltd. 2(B) (ii) Ground Floor, Tardeo Annexe, Film Centre
@@ -452,7 +452,7 @@ function Privacy() {
         <div className="footer_bot_border_wrapper padding_class_footer_bot_border_wrapper" style={{ padding: '15px !important' }}>
   <div className="footer_bot_border"></div>
 </div>
-<div class="copyright_txt"><span>© 1996-2024 Shaadi.com  - The World's No.1 Matchmaking Service™</span></div>
+<div class="copyright_txt"><span>© 1996-2024 Sangam.com  - The World's No.1 Matchmaking Service™</span></div>
       </div>
       </div>
       <Footer/>

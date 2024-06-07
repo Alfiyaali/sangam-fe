@@ -1,0 +1,125 @@
+.result-page-section{
+    padding-top: 120px;
+background: #ebebeb;
+
+}
+.result-page-section .search-title{
+    margin: 0px 10px 20px;
+}
+.result-page-section .container{
+    max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start !important;
+}
+.result-page-section .resultPage_title{
+    font-size: 20px;
+    font-weight: normal;
+}
+.result-page-section .filter-title{
+    font-size: 22px;
+    padding: 7px 0px;
+    text-align: center;
+}
+.result-page-section .filter-div{
+    width: 24%;
+    background-color: #fff;
+    padding: 10px 0px;
+    margin-right: 10px;
+    box-shadow: 0 1px 2px rgba(43, 59, 93, 0.29);
+    border-radius: 3px;
+}
+.result-page-section .input-content-div{
+    padding: 8px 15px;
+}
+.result-page-section .input-content-div div{
+    padding-bottom: 7px;
+}
+.result-page-section .filter-input{
+    margin: 4px;
+}
+.result-page-section .filter-main-label{
+color: #000;
+font-weight: 500;
+font-size: 18px;
+padding: 10px;
+box-shadow: 0 1px 2px rgba(43, 59, 93, 0.29);
+background: #ebebeb;
+width: 100%;
+}
+.result-page-section .profile-boxes{
+    width: 76%;
+}
+.result-page-section .main-box-profile{
+    background: #fff;
+    padding: 10px 15px;
+    margin: 0px 10px 25px 10px;
+    box-shadow: 0 1px 2px rgba(43, 59, 93, 0.29);
+    border-radius: 3px;
+    
+}
+.result-page-section .sub-profile-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.result-page-section .profile-content p{
+    color: #555555;
+    margin-bottom: 6px;
+}
+.result-page-section .profile-img{
+    padding: 5px 10px 5px 0px;
+}
+.result-page-section .guardian-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.result-page-section .userId-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #00bcd5;
+}
+.result-page-section .profile-content-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.result-page-section .profile-selection{
+    width: 30%;
+}
+.result-page-section .profile-selection h3{
+    font-size: 22px;
+    font-weight: 400;
+}
+.result-page-section .interested-btn{
+    width: 100%;
+    color: #fff;
+    background: #00bcd5;
+    border: 1px solid #00bcd5;
+    border-radius: 3px;
+    padding: 5px 0px 7px 0px;
+    margin-bottom: 10px;
+}
+.result-page-section .maybe-and-no-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result-page-section .maybe-btn{
+    width: 45%;
+    background: #83e1ed;
+    border: 1px solid #83e1ed;
+    border-radius: 3px;
+    padding: 5px 0px 7px 0px;
+    color: #fff;
+}
+.result-page-section .no-btn{
+width: 45%;
+color: #555555;
+border: 1px solid #555555!important;
+border-radius: 3px;
+background-color: #fff;
+padding: 5px 0px 7px 0px;
+}

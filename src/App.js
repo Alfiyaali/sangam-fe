@@ -25,14 +25,19 @@ import Online from './app/modules/privacy/pages/Online';
 import Missuse from './app/modules/Missuse/Pages/Missuse';
 import Header from './shared/components/Header/HeaderContent';
 import CustomerSupport from './app/modules/customer/pages/CustomerSupport';
+import SignupForm from "./app/modules/register/Register";
+import SerchPartner from "./app/modules/search/Search";
+import SearchResult from "./app/modules/search/searchresult/Searchresult"
+
 const App = () => (
+
   <Router>
     <div className="app">
    
     
       <div className="content">
         <Routes>
-       
+       <Route path='/register' element={<SignupForm />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about2" element={<About />} />
           <Route path="/about" element={<About2 />} />
@@ -48,8 +53,8 @@ const App = () => (
           <Route path="/profile" element={<Profile />} />
           <Route path="/report" element={<Missuse />} />
           <Route path="/customer-support" element={<CustomerSupport />} />
-
-
+          <Route path="/search" element={<SerchPartner />} />
+          <Route path="/search/search-result" element={<SearchResult />} />
         
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>

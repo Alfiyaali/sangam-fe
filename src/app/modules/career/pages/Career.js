@@ -99,7 +99,7 @@ const Career = () => (
       <Tab eventKey="profile" title={<img src="https://careers.peopleinteractive.in/wp-content/uploads/2023/02/Frame-18.png" alt="Home" style={{ width: '100%' }} />}>
       <p className='know-text'>
     <span style={{ fontWeight: 400 }}>
-    With over 7 million success stories and counting, Shaadi.com is a household name that is synonymous with matchmaking. With every passing day and every new feature we aspire to change the way people come together. 
+    With over 7 million success stories and counting, Sangam.com is a household name that is synonymous with matchmaking. With every passing day and every new feature we aspire to change the way people come together. 
     </span>
   </p>
   <div className='box-wrapper'>
@@ -124,7 +124,7 @@ const Career = () => (
       <Tab eventKey="contact" title={<img src="https://careers.peopleinteractive.in/wp-content/uploads/2023/02/Frame-17.png" alt="Home" style={{ width: '100%' }} />} >
       <p className='know-text'>
     <span style={{ fontWeight: 400 }}>
-    Shaadi Live is a first of its kind virtual event where you will get to meet and talk to up to 10 matches over multiple back-to-back 5 minute video calls.
+    Sangam Live is a first of its kind virtual event where you will get to meet and talk to up to 10 matches over multiple back-to-back 5 minute video calls.
     </span>
   </p>
   <div className='box-wrapper'>
@@ -207,7 +207,7 @@ For 5</p>
         <Accordion.Body>
         <div className='progression-body'>
 <div className='progression-left-container'>
-  <p className='progression-text '>Your well being is very important to us. We believe that taking those breaks are very important. You have vacation leave, paternity leave, maternity leave and of course, working for Shaadi.com you get marriage leave as well! </p>
+  <p className='progression-text '>Your well being is very important to us. We believe that taking those breaks are very important. You have vacation leave, paternity leave, maternity leave and of course, working for Sangam.com you get marriage leave as well! </p>
   
 </div>
 <div className='progression-right-container'>
@@ -244,7 +244,7 @@ For 5</p>
       </video></div>
           <div className='culture-right-box'>
             <p className='culture-heading'>Culture</p>
-            <p className='culture-text'>This is why we’ll be the perfect pair. We best describe our culture, like every Shaadi ever it takes a village to make it amazing. We are a bunch of people always working together, with a bold, innovative, dynamic approach always looking to up our game. We have figured that the best way to get results is by leveraging scale and encouraging our culture of startup thinking.</p>
+            <p className='culture-text'>This is why we’ll be the perfect pair. We best describe our culture, like every Sangam ever it takes a village to make it amazing. We are a bunch of people always working together, with a bold, innovative, dynamic approach always looking to up our game. We have figured that the best way to get results is by leveraging scale and encouraging our culture of startup thinking.</p>
             <Button className='culture-btn'>Know more</Button>
           </div>
         </div>

@@ -1,0 +1,48 @@
+.search-partner-page .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-partner-page {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.search-partner-page .field-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.search-partner-page .field-div label{
+    display: block;
+    margin-bottom: 5px;
+    width: 20%;
+}
+.search-partner-page .age-field{
+    width: 15% !important;
+}
+input[type="text"], input[type="number"], select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 7px;
+}
+.search-partner-page .checkbox-group {
+    display: flex;
+    align-items: center;
+    width: 20% !important;
+}
+.search-partner-page .field-submit-div{
+    text-align: end;
+}
+.search-partner-page .field-submit-div button{
+    color: #fff;
+    background: #00bcd5;
+    border: 1px solid #00bcd5;
+    border-radius: 3px;
+    /* padding: 5px 0px 7px 0px; */
+}

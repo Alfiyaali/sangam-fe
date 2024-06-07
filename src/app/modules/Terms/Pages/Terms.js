@@ -11,15 +11,7 @@ const Terms = () => {
             <div className="terms-cover-image">
                 <h1>Terms</h1>
             </div>
-            {/* <div className="terms-content">
-                <div className="terms-paragraph-container">
-                    <p className="terms-paragraph">
-                   
-	Welcome to Shaadi.com, your personal matchmaking platform. This Agreement sets out the legally binding terms for your use of the Site and membership. This Agreement may be modified by Shaadi.com from time to time. The membership and rights of admissions are reserved.<div class="spacer_4"></div>This Terms of Use is published in accordance with the Rule 3 (1) of the Information Technology (Intermediaries Guidelines and Digital Media Ethics Code) Rules, 2021.<div class="spacer_4"></div>Shaadi.com is an advertising platform providing targeted advertising services for matchmaking alliances and replaces the traditional newspaper classified. The Site  is for the personal use of individual members to advertise and promote their profiles for the purpose of finding relevant matches and cannot be used in connection with any commercial endeavors.<div class="spacer_4"></div>The Site is a serious matchmaking platform to seek a life partner for marriage and is not a casual dating site.<div class="spacer_4"></div>Access to the Shaadi.com website is free. However, we offer Premium Memberships wherein one can promote his/her Profile on various Shaadi.com properties such as Premium Interest Wall, Inbox, Search Results, Emails, Shaadi Chat, SMS, Video Chat etc.<div class="spacer_4"></div>
-
-                    </p>
-                </div>
-            </div> */}
+            
             <div id="pg_wrap">
   
   <div id="faqs_section" style={{ textAlign: "justify" }}>
@@ -48,7 +40,7 @@ const Terms = () => {
         }}
         className="mediumwhitebold"
       >
-        Shaadi.com to assist Mumbai Police / Statutory Investigation Agency
+        Sanagam.com to assist Mumbai Police / Statutory Investigation Agency
       </div>
       <div
         className="smallblack"
@@ -58,9 +50,9 @@ const Terms = () => {
           padding: "10px 5px"
         }}
       >
-        Shaadi.com will endeavour to provide all possible assistance to the
+        Sanagam.com will endeavour to provide all possible assistance to the
         Mumbai Police (Cyber Crime Investigation Cell) or any other statutory
-        investigation agency to tackle fraudulent users of Shaadi.com, on being
+        investigation agency to tackle fraudulent users of Sanagam.com, on being
         specifically instructed by the said authorities to do so.
         <div className="spacer_4" />
         To report fraud or misuse,{" "}
@@ -71,16 +63,16 @@ const Terms = () => {
       </div>
     </div>
     <div className="service_agreement">
-      Welcome to Shaadi.com, your personal matchmaking platform. This Agreement
+      Welcome to Sanagam.com, your personal matchmaking platform. This Agreement
       sets out the legally binding terms for your use of the Site and
-      membership. This Agreement may be modified by Shaadi.com from time to
+      membership. This Agreement may be modified by Sanagam.com from time to
       time. The membership and rights of admissions are reserved.
       <div className="spacer_4" />
       This Terms of Use is published in accordance with the Rule 3 (1) of the
       Information Technology (Intermediaries Guidelines and Digital Media Ethics
       Code) Rules, 2021.
       <div className="spacer_4" />
-      Shaadi.com is an advertising platform providing targeted advertising
+      Sanagam.com is an advertising platform providing targeted advertising
       services for matchmaking alliances and replaces the traditional newspaper
       classified. The Site is for the personal use of individual members to
       advertise and promote their profiles for the purpose of finding relevant
@@ -89,18 +81,18 @@ const Terms = () => {
       The Site is a serious matchmaking platform to seek a life partner for
       marriage and is not a casual dating site.
       <div className="spacer_4" />
-      Access to the Shaadi.com website is free. However, we offer Premium
-      Memberships wherein one can promote his/her Profile on various Shaadi.com
+      Access to the Sanagam.com website is free. However, we offer Premium
+      Memberships wherein one can promote his/her Profile on various Sanagam.com
       properties such as Premium Interest Wall, Inbox, Search Results, Emails,
-      Shaadi Chat, SMS, Video Chat etc.
+      Sanagam Chat, SMS, Video Chat etc.
       <div className="spacer_4" />
     </div>
     <ol className="list_decimal">
       <li>
         <b>Acceptance of Terms of Use Agreement.</b>
         <div className="spacer_4" />
-        In order to use the Shaadi.com Service you must register as a member on
-        the Website/ community sites/ mobile applications (“Site”). Shaadi.com
+        In order to use the Sanagam.com Service you must register as a member on
+        the Website/ community sites/ mobile applications (“Site”). Sanagam.com
         is an intermediary as defined under sub-clause (w) of Section 2 of the
         Information Technology Act, 2000. This Agreement is an electronic
         contract that establishes the legally binding terms you must accept to
@@ -112,7 +104,7 @@ const Terms = () => {
         <div className="spacer_4" />
         By using the Site, you agree to be bound by these Terms of Use
         ("Agreement"). If you wish to become a Member and promote/ advertise
-        your profile to other Members and make use of the Shaadi.com service
+        your profile to other Members and make use of the Sanagam.com service
         ("Service"), read these Terms of Use and follow the instructions in the
         registration process.
         <div className="spacer_4" />
@@ -127,8 +119,8 @@ const Terms = () => {
         continuous collection or storage of your personal details, you must
         discontinue using our Service and delete your account by sending an
         email from your registered email ID to{" "}
-        <a href="mailto:rtbf@shaadi.com" className="link">
-          rtbf@shaadi.com
+        <a href="mailto:rtbf@Sanagam.com" className="link">
+          rtbf@Sanagam.com
         </a>{" "}
         as we shall not be able to provide you any Service without having your
         personally identifiable information. .
@@ -138,13 +130,13 @@ const Terms = () => {
         <br />
         <ul className="list_lower_alpha">
           <li>
-            To register as a Member of Shaadi.com or use this Site, you must be
+            To register as a Member of Sanagam.com or use this Site, you must be
             legally competent and of legal marriageable age as per the laws of
             India (currently, 18 years or over for females and 21 years or over
             for males).
           </li>
           <li>
-            Shaadi.com site is only to facilitate personal advertisement for
+            Sanagam.com site is only to facilitate personal advertisement for
             lawful marriage alliance between persons who are legally competent
             to enter into matrimony under the laws to which they are subject.
             Membership in the Service is void where prohibited.
@@ -163,11 +155,11 @@ const Terms = () => {
             you shall not use this site for casual dating or for any commercial
             use. You also agree to abide by all of the terms and conditions of
             this Agreement and use the service in conformity with all applicable
-            laws. If at any time Shaadi.com is of the opinion (in its sole
+            laws. If at any time Sanagam.com is of the opinion (in its sole
             discretion) or has any reason to believe that you are not eligible
             to become a member or that you have made any misrepresentation, or
             violated any provisions of the Terms of Use, applicable laws,
-            Shaadi.com reserves the right to forthwith terminate your membership
+            Sanagam.com reserves the right to forthwith terminate your membership
             and / or your right to use the Service without any refund to you of
             any of your unutilized subscription fee.
           </li>
@@ -177,7 +169,7 @@ const Terms = () => {
             preference details submitted by you in your profile.
           </li>
           <li className="last_element">
-            Shaadi.com reserves the right to share information with third
+            Sanagam.com reserves the right to share information with third
             parties with regards to any promotions or offers exclusive to our
             members. However, we shall obtain your prior consent before sharing
             any of your data.
@@ -203,19 +195,19 @@ const Terms = () => {
           </li>
           <li>
             You may terminate your membership at any time, for any reason, by
-            deleting your profile from the Site or writing to Shaadi.com. In the
+            deleting your profile from the Site or writing to Sanagam.com. In the
             event you terminate your membership, you will not be entitled to a
             refund of any unutilized subscription fees, if any, paid by you,
             except where otherwise guaranteed in writing.
           </li>
           <li>
-            Shaadi.com may terminate your access to the Site and/or your
+            Sanagam.com may terminate your access to the Site and/or your
             membership for any reason including but not limited to the breach of
             the terms of use, using the service for commercial purposes,
             engaging in prohibited or inappropriate communication or activity,
             by sending notice to you at the email address as provided by you in
             your application for membership or such other email address as you
-            may later provide to Shaadi.com. If Shaadi.com terminates your
+            may later provide to Sanagam.com. If Sanagam.com terminates your
             membership for breach of terms of this Agreement, you will not be
             entitled to any refund of any Subscription fees, if any, paid by
             you.
@@ -242,9 +234,9 @@ const Terms = () => {
         promote their profiles for the purpose of generating accepts from
         relevant matches and cannot be used in connection with any commercial
         endeavors. This includes providing links to other web sites, whether
-        deemed competitive to Shaadi.com or otherwise. Organizations, companies,
-        and/or businesses cannot become Members of Shaadi.com and should not use
-        the Shaadi.com Service or Site for any purpose. Illegal and/or
+        deemed competitive to Sanagam.com or otherwise. Organizations, companies,
+        and/or businesses cannot become Members of Sanagam.com and should not use
+        the Sanagam.com Service or Site for any purpose. Illegal and/or
         unauthorized uses of the Site, including unauthorized framing of or
         linking to the Site will be investigated, and appropriate legal action
         will be taken, including without limitation, civil, criminal, and
@@ -254,21 +246,21 @@ const Terms = () => {
         <b>Other Terms of Use for Members.</b>
         <ol className="list_lower_alpha">
           <li>
-            Shaadi.com reserves the right in it's sole discretion to review the
+            Sanagam.com reserves the right in it's sole discretion to review the
             activity and status of each account and block access to the member
             based on such review.
           </li>
           <li>
-            Shaadi.com reserves the right at its sole discretion to
+            Sanagam.com reserves the right at its sole discretion to
             restrict/suspend your access to its website based on review of the
-            member's activity, status or any such criteria Shaadi.com may deems
+            member's activity, status or any such criteria Sanagam.com may deems
             fit and proper with due intimation to you.
           </li>
           <li>
             You hereby confirm that as on date of this registration, you do not
             have any objection to receive emails, SMS/WhatsApp messages and
-            calls from Shaadi.com and members of Shaadi.com as long as you are a
-            registered member of Shaadi.com including SMS permission for
+            calls from Sanagam.com and members of Sanagam.com as long as you are a
+            registered member of Sanagam.com including SMS permission for
             authenticating mobile verification and transactions via OTP, sent by
             the Payment Gateway. This consent shall supersede any preferences
             set by you with or registration done with the Do Not Disturb (DND
@@ -279,7 +271,7 @@ const Terms = () => {
           </li>
           <li>
             Multiple profiles of the same person are not allowed on our Site.
-            Shaadi.com reserves the right to deactivate all multiple profiles
+            Sanagam.com reserves the right to deactivate all multiple profiles
             without any refund of subscription fees.
           </li>
           <li>
@@ -287,7 +279,7 @@ const Terms = () => {
             information provided by you is correct and accurate. If you are
             creating the profile on behalf of your friend/sibling/children, you
             hereby agree that you have the required permission/consent from the
-            particular person whose profile is created on Shaadi.com by you.
+            particular person whose profile is created on Sanagam.com by you.
             Impersonation is a crime and punishable under various laws.
           </li>
           <li>
@@ -303,42 +295,42 @@ const Terms = () => {
           </li>
           <li>
             You will not transmit any chain letters or junk email to other
-            Shaadi.com Members. Although Shaadi.com cannot monitor the conduct
-            of its Members off the Shaadi.com Site, it is also a violation of
+            Sanagam.com Members. Although Sanagam.com cannot monitor the conduct
+            of its Members off the Sanagam.com Site, it is also a violation of
             the Agreements to use any information obtained from other members in
             order to harass, abuse, or harm another person, or in order to
             contact, advertise to, solicit, or sell to any Member without their
             prior explicit consent.
           </li>
           <li>
-            Shaadi.com reserves the right to take appropriate steps to protect
-            Shaadi.com and/or its Members from any abuse/misuse as it deems
+            Sanagam.com reserves the right to take appropriate steps to protect
+            Sanagam.com and/or its Members from any abuse/misuse as it deems
             appropriate in its sole discretion.
           </li>
           <li>
             You hereby agree that you shall not use the Services and the
-            platforms to harass any member including the ShaadiMeet/Near
-            Me/ShaadiLive features.{" "}
+            platforms to harass any member including the SanagamMeet/Near
+            Me/SanagamLive features.{" "}
           </li>
           <li>
             You shall interact with other members with due respect and shall
-            ensure to be decently dressed up during the ShaadiLive event,
-            ShaadiMeet.
+            ensure to be decently dressed up during the SanagamLive event,
+            SanagamMeet.
           </li>
           <li>
             You cannot use any automated processes, including IRC Bots, EXE's,
             CGI or any other programs/scripts to view content on or communicate
-            / contact / respond / interact with Shaadi.com and/or its members.
+            / contact / respond / interact with Sanagam.com and/or its members.
           </li>
           <li>
-            Shaadi.com reserves the right to screen
+            Sanagam.com reserves the right to screen
             communications/advertisements that you may send to other Member(s)
             and also regulate the same by deleting unwarranted/obscene
             communications/advertisements at any time at its sole discretion
             without prior notice to any Member.
           </li>
           <li>
-            Shaadi.com Members are expected to exercise simple precautions for
+            Sanagam.com Members are expected to exercise simple precautions for
             their privacy and safety. A suggestive guideline of such precautions
             is enlisted under security tips "
             <a
@@ -352,84 +344,84 @@ const Terms = () => {
             to the said Tips.
           </li>
           <li className="last_element">
-            Shaadi.com Members who subscribe to the Shaadi.com Select
-            Service/VIPShaadi Service hereby, unconditionally and irrevocably
+            Sanagam.com Members who subscribe to the Sanagam.com Select
+            Service/VIPSanagam Service hereby, unconditionally and irrevocably
             confirm that you have read terms and conditions and agree to abide
             by them.
           </li>
         </ol>
       </li>
       <li>
-        <b>Proprietary Rights in the Content on Shaadi.com</b>
+        <b>Proprietary Rights in the Content on Sanagam.com</b>
         <div className="spacer_4" />
-        Shaadi.com owns and retains all proprietary rights in the Shaadi.com
-        Site and the Shaadi.com Service. The Site contains the copyrighted
-        material, trademarks, and other proprietary information of Shaadi.com,
+        Sanagam.com owns and retains all proprietary rights in the Sanagam.com
+        Site and the Sanagam.com Service. The Site contains the copyrighted
+        material, trademarks, and other proprietary information of Sanagam.com,
         and/or its licensors. Except for that information which is in the public
         domain such as member profile or for which permission has been obtained
         from the user, you cannot copy, modify, publish, transmit, distribute,
         perform, display, or sell any such proprietary information. Any such act
         or an attempted act on your part shall constitute a violation of this
         Agreement and your membership is liable to be terminated forthwith by
-        Shaadi.com without refund of any of your unused Subscription fees.
-        Shaadi.com reserves the right to take legal action (civil and/or
+        Sanagam.com without refund of any of your unused Subscription fees.
+        Sanagam.com reserves the right to take legal action (civil and/or
         criminal) wherever applicable for any violations.
       </li>
       <li>
         <b>Content Posted on the Site.</b>
         <ol className="list_lower_alpha">
           <li>
-            You understand and agree that Shaadi.com may delete any listing,
+            You understand and agree that Sanagam.com may delete any listing,
             content, communication, photos or profiles (collectively, "Content")
-            that in the sole judgment of Shaadi.com violate this Agreement or
+            that in the sole judgment of Sanagam.com violate this Agreement or
             which might be offensive, illegal, or that might violate the rights,
-            harm, or threaten the safety of either Shaadi.com and/or its
+            harm, or threaten the safety of either Sanagam.com and/or its
             Members.
           </li>
           <li>
             With respect to Content you submit or make available for inclusion
             on publicly accessible areas of the Site including but not limited
             to your contact details, you hereby unconditionally and irrevocably
-            grant to Shaadi.com the consent and license to use, store,
+            grant to Sanagam.com the consent and license to use, store,
             distribute, reproduce, prepare derivative works of, modify, adapt,
             publicly perform and publicly display such Content on the Site and
-            to the members of shaadi.com community site(s) from time to time.
+            to the members of Sanagam.com community site(s) from time to time.
           </li>
           <li>
             By submitting your success story, you hereby expressly authorize
-            Shaadi.com to use, publish and display your photographs and
+            Sanagam.com to use, publish and display your photographs and
             testimony on the Site.
           </li>
           <li>
             You understand and hereby agree that all information, data, text,
             photographs, graphics, communications, tags, or other Content
             whether publicly posted or privately transmitted or otherwise made
-            available to Shaadi.com are the sole responsibility of the person
+            available to Sanagam.com are the sole responsibility of the person
             from whom such Content originated and shall be at the
             member's/person's sole risks and consequences. This means that you
-            (and not Shaadi.com) are solely responsible for all Content that you
+            (and not Sanagam.com) are solely responsible for all Content that you
             upload, post, email, transmit or otherwise make available via the
-            Service. Shaadi.com does not control the Content posted via the
+            Service. Sanagam.com does not control the Content posted via the
             Service and, as such, does not guarantee the accuracy, integrity or
             quality of such Content. We advise all User/s to independently
             verify the content /information posted by the other members before
-            acting upon the same and under no circumstances will Shaadi.com be
+            acting upon the same and under no circumstances will Sanagam.com be
             liable in any way for any Content, including, but not limited to,
             any errors or omissions in any Content, or any loss or damage of any
             kind incurred as a result of the use of any Content posted, emailed,
             transmitted or otherwise made available via the Service.
           </li>
           <li>
-            Shaadi.com reserves the right to check the authenticity of Content
-            posted on the Site. In exercising this right, Shaadi.com may ask you
+            Sanagam.com reserves the right to check the authenticity of Content
+            posted on the Site. In exercising this right, Sanagam.com may ask you
             to provide any documentary or other form of evidence supporting the
             Content you post on the Site. If you fail to produce such evidence
-            to the satisfaction of Shaadi.com, Shaadi.com may, in its sole
+            to the satisfaction of Sanagam.com, Sanagam.com may, in its sole
             discretion, terminate your Membership without a refund.
           </li>
           <li>
             The following is an indicative list of the kind of Content that is
-            illegal or prohibited on the Site. Shaadi.com will investigate and
+            illegal or prohibited on the Site. Sanagam.com will investigate and
             take appropriate legal action in its sole discretion against anyone
             who violates this Agreement, including without limitation, removing
             the offending communication/Content from the Service and terminating
@@ -501,7 +493,7 @@ const Terms = () => {
             </ul>
           </li>
           <li>
-            You must use the Shaadi.com Service in a manner consistent with any
+            You must use the Sanagam.com Service in a manner consistent with any
             and all applicable local, state, and federal laws, rules and
             regulations.
           </li>
@@ -519,7 +511,7 @@ const Terms = () => {
         the prior written consent of the owner of such proprietary rights.{" "}
         <div className="spacer_4" />
         Without limiting the foregoing, if you believe that your work has been
-        copied and posted on the Shaadi.com service in a way that constitutes
+        copied and posted on the Sanagam.com service in a way that constitutes
         copyright infringement, please provide us with the following
         information:
         <br />
@@ -558,42 +550,42 @@ const Terms = () => {
         <b>Your Interaction with other Members &amp; Member Disputes.</b>
         <div className="spacer_4" />
         You are solely responsible for your advertisement/communications with
-        other Shaadi.com Members. Shaadi.com reserves the right, but has no
+        other Sanagam.com Members. Sanagam.com reserves the right, but has no
         obligation, to monitor disputes between you and other Members.
-        Shaadi.com also reserves the right to take appropriate action against
-        errant members. However, Shaadi.com is not obliged to share such action
-        with other members, including complainants. Shaadi.com expressly
+        Sanagam.com also reserves the right to take appropriate action against
+        errant members. However, Sanagam.com is not obliged to share such action
+        with other members, including complainants. Sanagam.com expressly
         disclaims any responsibility or liability for any transactions or
         interactions between the members inter-se.
       </li>
       <li>
-        <b>Contributions towards Shaadi.org</b>
+        <b>Contributions towards Sanagam.org</b>
         <ul className="list_lower_alpha">
-          <li>Shaadi.org, a Social Initiative by shaadi.com.</li>
+          <li>Sanagam.org, a Social Initiative by Sanagam.com.</li>
           <li>
-            Shaadi.com is only facilitating the transactions on{" "}
-            <a href="https://www.shaadi.com" className="link" target="_blank">
-              www.shaadi.com
+            Sanagam.com is only facilitating the transactions on{" "}
+            <a href="https://www.Sanagam.com" className="link" target="_blank">
+              www.Sanagam.com
             </a>{" "}
-            for collecting the contribution towards Shaadi.org
+            for collecting the contribution towards Sanagam.org
           </li>
           <li>
-            Shaadi.com shall not be responsible for the end use of the amounts
+            Sanagam.com shall not be responsible for the end use of the amounts
             being contributed.
           </li>
           <li className="last_element">
-            For any reason if the Shaadi.com agrees to refund the amount paid
+            For any reason if the Sanagam.com agrees to refund the amount paid
             for subscription, in such an event the amount contributed to
-            Shaadi.org shall not be liable for refund.
+            Sanagam.org shall not be liable for refund.
           </li>
         </ul>
       </li>
       <li>
         <b>Privacy.</b>
         <div className="spacer_4" />
-        Use of the Shaadi.com Site and/or the Shaadi.com Service is governed by
+        Use of the Sanagam.com Site and/or the Sanagam.com Service is governed by
         our{" "}
-        <a href="/shaadi-info/index/privacy" className="link" target="_blank">
+        <a href="/Sanagam-info/index/privacy" className="link" target="_blank">
           Privacy Policy
         </a>{" "}
         and follow guidelines to protect your privacy.
@@ -602,72 +594,72 @@ const Terms = () => {
         <b>Disclaimers.</b>
         <ul className="list_lower_alpha">
           <li>
-            Shaadi.com is not responsible for any incorrect or inaccurate
+            Sanagam.com is not responsible for any incorrect or inaccurate
             Content/listing posted on the Site or in connection with the
-            Shaadi.com Service, whether caused by Users, Members or by any of
+            Sanagam.com Service, whether caused by Users, Members or by any of
             the equipment or programming associated with or utilized in the
             Service, nor for the conduct of any User and/or Member of the
-            Shaadi.com Service whether online or offline.
+            Sanagam.com Service whether online or offline.
           </li>
           <li>
-            Shaadi.com assumes no responsibility for any error, omission,
+            Sanagam.com assumes no responsibility for any error, omission,
             interruption, deletion, defect, delay in operation or transmission,
             communications line failure, theft or destruction or unauthorized
             access to, or alteration of, User and/or Member communications or
-            any communications by Shaadi.com to its Members.
+            any communications by Sanagam.com to its Members.
           </li>
           <li>
-            Shaadi.com is not responsible for any problems or technical
+            Sanagam.com is not responsible for any problems or technical
             malfunction of any telephone network or lines, computer
             on-line-systems, servers or providers, computer equipment, software,
             failure of email or players on account of technical problems or
             traffic congestion on the Internet or at any web site or combination
             thereof, including injury or damage to Users and/or Members or to
             any other person's computer related to or resulting and/or in
-            connection with the Shaadi.com Service.
+            connection with the Sanagam.com Service.
           </li>
           <li>
-            Under no circumstances will Shaadi.com be responsible for any loss
+            Under no circumstances will Sanagam.com be responsible for any loss
             or damage resulting from anyone's use of the Site or the Service
-            and/or any Content posted on the Shaadi.com Site or transmitted to
-            Shaadi.com Members. You should not provide your financial
+            and/or any Content posted on the Sanagam.com Site or transmitted to
+            Sanagam.com Members. You should not provide your financial
             information (for example, your credit card or bank account
             information), or wire or otherwise send money, to other Members.
           </li>
           <li>
-            The exchange of matchmaking profile(s) through or by "Shaadi.com" is
-            not a matrimonial offer and/or recommendation from/by Shaadi.com.
-            Shaadi.com shall not be responsible for any loss or damage to any
+            The exchange of matchmaking profile(s) through or by "Sanagam.com" is
+            not a matrimonial offer and/or recommendation from/by Sanagam.com.
+            Sanagam.com shall not be responsible for any loss or damage to any
             individual arising out of, or subsequent to, any relations
             (including but not limited to matrimonial relations) established
-            pursuant to the use of Shaadi.com service.
+            pursuant to the use of Sanagam.com service.
           </li>
           <li>
-            The Site and the Service are provided "AS-IS" and Shaadi.com
+            The Site and the Service are provided "AS-IS" and Sanagam.com
             expressly disclaims any warranty of fitness for a particular purpose
-            or non-infringement. Shaadi.com cannot guarantee and does not
+            or non-infringement. Sanagam.com cannot guarantee and does not
             promise any specific results from use of the Site and/or the
-            Shaadi.com Service. You understand that shaadi.com makes no
+            Sanagam.com Service. You understand that Sanagam.com makes no
             guarantees, either express or implied, regarding compatibility with
             individuals you meet through the Service.
           </li>
           <li>
-            Shaadi.com expressly disclaims any liability or responsibility
+            Sanagam.com expressly disclaims any liability or responsibility
             whatsoever and howsoever arising as a result of any Content/listing
-            posted on the Site / made available to Shaadi.com by any Members or
+            posted on the Site / made available to Sanagam.com by any Members or
             the users of the Site or any third party.
           </li>
           <li>
-            Shaadi.com does not assume any responsibility or liability for any
+            Sanagam.com does not assume any responsibility or liability for any
             illegal Content posted on the Site by any Members, users or any
             third party.
           </li>
           <li className="last_element">
             All liability, whether civil or criminal arising out of any Content
             that is Posted on the Site will be of that Member / user / third
-            party who has Posted such Content and Shaadi.com reserves its right
+            party who has Posted such Content and Sanagam.com reserves its right
             to claim damages from such Member/ user / third party that it may
-            suffer as a result of such Content Posted on the Site. Shaadi.com
+            suffer as a result of such Content Posted on the Site. Sanagam.com
             does not claim ownership of Content you submit or make available for
             inclusion on the Service.
           </li>
@@ -676,14 +668,14 @@ const Terms = () => {
       <li>
         <b>Limitation on Liability.</b>
         <div className="spacer_4" />
-        In no event will Shaadi.com be liable to you or any third person for any
+        In no event will Sanagam.com be liable to you or any third person for any
         indirect, consequential, exemplary, incidental, special or punitive
         damages, including also lost profits arising from your use of the Site
-        or the Shaadi.com Service, even if Shaadi.com has been advised of the
+        or the Sanagam.com Service, even if Sanagam.com has been advised of the
         possibility of such damages. Notwithstanding anything to the contrary
-        contained herein, Shaadi.com's liability to you for any cause
+        contained herein, Sanagam.com's liability to you for any cause
         whatsoever, and regardless of the form of the action, will at all times
-        be limited to the amount paid, if any, by you to Shaadi.com, for the
+        be limited to the amount paid, if any, by you to Sanagam.com, for the
         Service during the term of membership.
       </li>
       <li>
@@ -698,7 +690,7 @@ const Terms = () => {
       <li>
         <b>Indemnity.</b>
         <div className="spacer_4" />
-        You agree to indemnify and hold Shaadi.com, its subsidiaries,
+        You agree to indemnify and hold Sanagam.com, its subsidiaries,
         affiliates, officers, agents, and other partners and employees, fully
         indemnified and harmless from any loss, liability, claim, or demand,
         including reasonable attorney's fees, made by any third party due to or
@@ -711,8 +703,8 @@ const Terms = () => {
         <b>Other.</b>
         <ul className="list_lower_roman">
           <li>
-            By becoming a Member of the Shaadi.com service, you agree to receive
-            certain specific email from Shaadi.com and/or its group sites. You
+            By becoming a Member of the Sanagam.com service, you agree to receive
+            certain specific email from Sanagam.com and/or its group sites. You
             can unsubscribe at any time for any reason quickly and easily by
             clicking on the unsubscribe link enclosed in the mail. You can also
             manage your subscription to these emails using the My Alert Manager
@@ -720,20 +712,20 @@ const Terms = () => {
           </li>
           <li>
             This Agreement, accepted upon use of the Site and further affirmed
-            by becoming a Member of the Shaadi.com service, contains the entire
-            agreement between you and Shaadi.com regarding the use of the Site
+            by becoming a Member of the Sanagam.com service, contains the entire
+            agreement between you and Sanagam.com regarding the use of the Site
             and/or the Service. If any provision of this Agreement is held
             invalid, the remainder of this Agreement shall continue in full
             force and effect.
           </li>
         </ul>
-        By becoming a member of Shaadi.com and/or using the Services of the
+        By becoming a member of Sanagam.com and/or using the Services of the
         Site, you unconditionally and irrevocably confirm that you have read and
         understood the above provisions and agree to abide by them. If you are
         not agreeing to any of the above terms and conditions please refrain
         yourself from registering on the Site.
         <div className="spacer_4" />
-        Shaadi.com is a trademark of People Interactive (I) Pvt. Ltd.
+        Sanagam.com is a trademark of People Interactive (I) Pvt. Ltd.
         <div className="spacer_4" />
         This Agreement is an electronic document in terms of the Information
         Technology Act, 2000 and Rules there under pertaining to electronic
