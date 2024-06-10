@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Navigation from '../Navigation/Navigation';
-import Logo from '../../../assets/images/logo-svg.svg';
+// import Navigation from '../Navigation/Navigation';
+// import Logo from '../../../assets/images/logo-svg.svg';
 import { Container } from 'react-bootstrap';
 import HeaderContent from './HeaderContent';
 import DetailsModal from '../Details/DetailsModal';
