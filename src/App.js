@@ -28,6 +28,7 @@ import CustomerSupport from './app/modules/customer/pages/CustomerSupport';
 import SignupForm from "./app/modules/register/Register";
 import SerchPartner from "./app/modules/search/Search";
 import SearchResult from "./app/modules/search/searchresult/Searchresult"
+import MatrimonialForm from './shared/MatrimonialForm/MatrimonialForm';
 
 const App = () => (
 
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/customer-support" element={<CustomerSupport />} />
           <Route path="/search" element={<SerchPartner />} />
           <Route path="/search/search-result" element={<SearchResult />} />
+          <Route path="/form" element={<MatrimonialForm />} />
         
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
