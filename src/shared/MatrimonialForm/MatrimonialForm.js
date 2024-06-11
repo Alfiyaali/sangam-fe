@@ -1,460 +1,409 @@
-import React, { useState, useEffect } from 'react';
-import '../MatrimonialForm/MatrimonialForm.css';
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import "./MatrimonialForm.css";
 
 const MatrimonialForm = () => {
-  const initialFormData = {
-    fname: '',
-    lname: '',
-    dob: '',
-    age: '',
-    email: '',
-    education: '',
-    mnumber: '',
-    gender: '',
-    occupation: '',
-    raashi: '',
-    dosham: '',
-    eating: '',
-    smoking: '',
-    drinking: '',
-    family: '',
-    familyvalue: '',
-    familystatus: '',
-    height: '',
-    weight: '',
-    country: '',
-    state: '',
-    astrological: '',
-    religion: '',
-    caste: '',
-    gotra: '',
-    mtongue: '',
-    horoscope: '',
-    star: '',
-    expectation: '',
-    annual_income: '',
-    martial_status: '',
-    citizen: ''
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+  const [persons, setPersons] = useState(
+    JSON.parse(localStorage.getItem("persons")) || []
+  );
+
+  const onSubmit = (data) => {
+    const updatedPersons = [...persons, data];
+    setPersons(updatedPersons);
+    localStorage.setItem("persons", JSON.stringify(updatedPersons));
+    reset(); // Resetting the form after submission
   };
-
-  const [formData, setFormData] = useState(initialFormData);
-  const [allFormData, setAllFormData] = useState([]);
-
-  useEffect(() => {
-    const storedData = JSON.parse(localStorage.getItem('allFormData'));
-    if (storedData) {
-      setAllFormData(storedData);
-    }
-  }, []);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      const newData = { ...formData };
-      setAllFormData([...allFormData, newData]);
-      localStorage.setItem('allFormData', JSON.stringify([...allFormData, newData]));
-      setFormData(initialFormData);
-      alert("Form data saved locally.");
-    } else {
-      alert("Email or phone number already exists!");
-    }
-  };
-
-  const validateForm = () => {
-    const { email, mnumber } = formData;
-    const existingEmail = allFormData.some(data => data.email === email);
-    const existingMnumber = allFormData.some(data => data.mnumber === mnumber);
-    return !existingEmail && !existingMnumber;
-  };
-
 
   return (
-    <div>
-      <header>
-        REGISTRATION FORM
-      </header>
-      <div className="form-container">
-        <form onSubmit={handleSubmit}>
-          <div className="form first">
-            <div className="details personal">
-              <span className="title">Personal Details</span>
-              <div className="fields">
-                <div className="input-field">
-                  <label>First Name*</label>
-                  <input
-                    type="text"
-                    name="fname"
-                    placeholder="Enter your name"
-                    value={formData.fname}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label>Last Name*</label>
-                  <input
-                    type="text"
-                    name="lname"
-                    placeholder="Enter your name"
-                    value={formData.lname}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label htmlFor="dob">Date of Birth:</label>
-                  <input
-                    type="date"
-                    id="dob"
-                    name="dob"
-                    value={formData.dob}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label htmlFor="age">Age:</label>
-                  <input
-                    type="number"
-                    id="age"
-                    name="age"
-                    value={formData.age}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label htmlFor='email'>Email*</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label>Education*</label>
-                  <input
-                    type="text"
-                    name="education"
-                    placeholder="Enter your school name"
-                    value={formData.education}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label>Mobile Number*</label>
-                  <input
-                    type="number"
-                    name="mnumber"
-                    data-maxlength="10"
-                    value={formData.mnumber}
-                    onChange={(e) => {
-                      const value = e.target.value.slice(0, 10);
-                      setFormData({ ...formData, mnumber: value });
-                    }}
-                    required
-                  />
-                </div>
-                <div className="input-field">
-                  <label>Gender*</label>
-                  <select name="gender" value={formData.gender} onChange={handleChange} required>
-                    <option value="" disabled>
-                      Select gender
-                    </option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Others">Others</option>
-                  </select>
-                </div>
-                <div className="input-field">
-                  <label>Occupation*</label>
-                  <input
-                    type="text"
-                    name="occupation"
-                    placeholder="Enter your occupation"
-                    value={formData.occupation}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-              <div className="details ID">
-                <span className="title">Astrological Details</span>
-                <div className="fields">
-                  <div className="input-field">
-                    <label>Raashi/Moon Sign*</label>
-                    <input
-                      type="text"
-                      name="raashi"
-                      placeholder="Enter"
-                      value={formData.raashi}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Dosham/Mangalik*</label>
-                    <input
-                      type="text"
-                      name="dosham"
-                      placeholder="Enter"
-                      value={formData.dosham}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Eating Habit*</label>
-                    <input
-                      type="text"
-                      name="eating"
-                      placeholder="Enter"
-                      value={formData.eating}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Smoking Edit*</label>
-                    <input
-                      type="text"
-                      name="smoking"
-                      placeholder="Enter"
-                      value={formData.smoking}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Drinking*</label>
-                    <input
-                      type="text"
-                      name="drinking"
-                      placeholder="Enter"
-                      value={formData.drinking}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Family Type*</label>
-                    <input
-                      type="text"
-                      name="family"
-                      placeholder="Enter"
-                      value={formData.family}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Your Family Value*</label>
-                    <input
-                      type="text"
-                      name="familyvalue"
-                      placeholder="Enter"
-                      value={formData.familyvalue}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Your Family Status*</label>
-                    <input
-                      type="text"
-                      name="familystatus"
-                      placeholder="Enter"
-                      value={formData.familystatus}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Height*</label>
-                    <input
-                      type="text"
-                      name="height"
-                      placeholder="Feet"
-                      value={formData.height}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Weight*</label>
-                    <input
-                      type="number"
-                      name="weight"
-                      placeholder="KG"
-                      value={formData.weight}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label htmlFor="country">Country*</label>
-                    <input
-                      type="text"
-                      name="country"
-                      placeholder="Enter"
-                      value={formData.country}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>State*</label>
-                    <input
-                      type="text"
-                      name="state"
-                      placeholder="Enter"
-                      value={formData.state}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>About Me*</label>
-                    <input
-                      type="text"
-                      name="astrological"
-                      placeholder="Enter your text"
-                      value={formData.astrological}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Religion*</label>
-                    <input
-                      type="text"
-                      name="religion"
-                      placeholder="Enter"
-                      value={formData.religion}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Caste*</label>
-                    <input
-                      type="text"
-                      name="caste"
-                      placeholder="Enter your text"
-                      value={formData.caste}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Gotra(m)*</label>
-                    <input
-                      type="text"
-                      name="gotra"
-                      placeholder="Enter your text"
-                      value={formData.gotra}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Mother Tongue</label>
-                    <input
-                      type="text"
-                      name="mtongue"
-                      placeholder="Enter your text"
-                      value={formData.mtongue}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Horoscope Match</label>
-                    <input
-                      type="text"
-                      name="horoscope"
-                      placeholder="Enter your text"
-                      value={formData.horoscope}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Star</label>
-                    <input
-                      type="text"
-                      name="star"
-                      placeholder="Enter your text"
-                      value={formData.star}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Expectation*</label>
-                    <input
-                      type="text"
-                      name="expectation"
-                      placeholder="Enter"
-                      value={formData.expectation}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Annual Income*</label>
-                    <input
-                      type="number"
-                      name="annual_income"
-                      placeholder="Enter"
-                      value={formData.annual_income}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Martial Status*</label>
-                    <input
-                      type="text"
-                      name="martial_status"
-                      placeholder="Enter"
-                      value={formData.martial_status}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="input-field">
-                    <label>Citizen*</label>
-                    <input
-                      type="text"
-                      name="citizen"
-                      placeholder="Enter"
-                      value={formData.citizen}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <button type="submit">
-                  <span className="btnText">Submit</span>
-                </button>
-              </div>
+    <div className="form-container">
+      <header>MATRIMONIAL REGISTRATION FORM</header>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="personal-details">
+          <p className="details-title">Personal Details</p>
+          <div class="flex-container">
+            <div className="flex-item-left">
+              <label htmlFor="firstName">
+                First Name <span>*</span>
+              </label>
+              <input
+                type="text"
+                id="firstName"
+                {...register("firstName", {
+                  required: true,
+                  maxLength: 15, // Setting maximum character limit
+                })}
+              />
+              {errors.firstName && errors.firstName.type === "required" && (
+                <p className="error-message">First name is required.</p>
+              )}
+              {errors.firstName && errors.firstName.type === "maxLength" && (
+                <p className="error-message">Maximum 15 characters allowed.</p>
+              )}
+            </div>
+
+            <div className="flex-item-center">
+              <label htmlFor="">
+                Last Name <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("lastName", { required: true, maxLength: 15 })}
+              />
+              {errors.lastName?.type === "required" && (
+                <p className="error-message">Last name is required.</p>
+              )}
+              {errors.lastName?.type === "maxLength" && (
+                <p className="error-message">
+                  Last name cannot exceed 15 characters.
+                </p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">Date of Birth</label>
+              <input type="date" {...register("dob", { required: true })} />
+              {errors.dob && (
+                <p className="error-message">Date Of birth is required.</p>
+              )}
+            </div>
+
+
+            <div class="flex-item-left">
+              <label htmlFor="">Age</label>
+              <input type="number" {...register("age", { required: true })} />
+              {errors.age && <p className="error-message">Age is required.</p>}
+            </div>
+
+
+           <div className="flex-item-center">
+        <label htmlFor="">
+          Email Address <span>*</span>
+        </label>
+        <input
+          type="email"
+          {...register("email", {
+            required: "Email is required.",
+            pattern: {
+              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+              message: "Invalid email address format."
+            }
+          })}
+        />
+        {errors.email && (
+          <p className="error-message">{errors.email.message}</p>
+        )}
+      </div>
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Education <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("education", { required: true })}
+              />
+              {errors.education && (
+                <p className="error-message">Education is required.</p>
+              )}
+            </div>
+            <div className="flex-item-left">
+        <label htmlFor="">Mobile Number</label>
+        <input
+          type="tel"
+          {...register("mobile", {
+            required: "Mobile Number is required.",
+            pattern: {
+              value: /^\d{10}$/,
+              message: "Invalid mobile number format. Please enter a 10-digit number."
+            }
+          })}
+        />
+        {errors.mobile && (
+          <p className="error-message">{errors.mobile.message}</p>
+        )}
+      </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">Gender</label>
+              <select {...register("gender", { required: true })}>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              {errors.gender && (
+                <p className="error-message">Date Of birth is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Occupation <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("occupation", { required: true })}
+              />
+              {errors.occupation && (
+                <p className="error-message">Occupation is required.</p>
+              )}
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+        <div className="astro-details">
+          <p className="details-title">Astrological Details</p>
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <label htmlFor="">
+                Raashi/Moon Sign <span>*</span>
+              </label>
+              <input type="text" {...register("rashi", { required: true })} />
+              {errors.rashi && (
+                <p className="error-message">Raashi/Moon Sign is required.</p>
+              )}
+            </div>
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Dosham/Mangalik <span>*</span>
+              </label>
+              <input type="text" {...register("dosham", { required: true })} />
+              {errors.dosham && (
+                <p className="error-message">Dosham/Mangalik is required.</p>
+              )}
+            </div>
+            <div class="flex-item-right">
+              <label htmlFor="">Eating Habit <span>*</span></label>
+              <input type="text" {...register("eating", { required: true })} />
+              {errors.eating && (
+                <p className="error-message">Eating Habit is required.</p>
+              )}
+            </div>
+            <div class="flex-item-left">
+              <label htmlFor="">Smoking Habit <span>*</span></label>
+              <input type="text" {...register("smoking", { required: true })} />
+              {errors.smoking && (
+                <p className="error-message">Smoking Habit is required.</p>
+              )}
+            </div>
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Drinking <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("drinking", { required: true })}
+              />
+              {errors.drinking && (
+                <p className="error-message">Drinking is required.</p>
+              )}
+            </div>
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Family Type <span>*</span>
+              </label>
+              <input type="text" {...register("family", { required: true })} />
+              {errors.family && (
+                <p className="error-message">Family Type is required.</p>
+              )}
+            </div>
+            <div class="flex-item-left">
+              <label htmlFor="">Your Family Value <span>*</span> </label>
+              <input type="text" {...register("value", { required: true })} />
+              {errors.value && (
+                <p className="error-message">Your Family Value is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">Your Family Status <span>*</span></label>
+              <input
+                type="text"
+                {...register("familyStatus", { required: true })}
+              />
+
+              {errors.familyStatus && (
+                <p className="error-message">Family Status is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Height <span>*</span>
+              </label>
+              <input type="text" {...register("height", { required: true })} />
+              {errors.height && (
+                <p className="error-message">Height is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-left">
+              <label htmlFor="">
+                Weight <span>*</span>
+              </label>
+              <input type="text" {...register("Weight", { required: true })} />
+              {errors.Weight && (
+                <p className="error-message">Weight is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Country <span>*</span>
+              </label>
+              <input type="text" {...register("Country", { required: true })} />
+              {errors.Country && (
+                <p className="error-message">Country is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                State <span>*</span>
+              </label>
+              <input type="text" {...register("State", { required: true })} />
+              {errors.State && (
+                <p className="error-message">State is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-left">
+              <label htmlFor="">
+                About Me <span>*</span>
+              </label>
+              <input type="text" {...register("AboutMe", { required: true })} />
+              {errors.AboutMe && (
+                <p className="error-message">About Me is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Relegion <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("Relegion", { required: true })}
+              />
+              {errors.Relegion && (
+                <p className="error-message">Relegion is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Caste <span>*</span>
+              </label>
+              <input type="text" {...register("Caste", { required: true })} />
+              {errors.Caste && (
+                <p className="error-message">Caste is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-left">
+              <label htmlFor="">
+                Gotra(m) <span>*</span>
+              </label>
+              <input type="text" {...register("Gotra", { required: true })} />
+              {errors.Gotra && (
+                <p className="error-message">Gotra(m) is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">Mother Tongue</label>
+              <input
+                type="text"
+                // {...register("MotherTongue", { required: true })}
+              />
+              {/* {errors.MotherTongue && (
+                <p className="error-message">Mother Tongue is required.</p>
+              )} */}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Horoscope Match
+              </label>
+              <input
+                type="text"
+                // {...register("HoroscopeMatch", { required: true })}
+              />
+              {/* {errors.HoroscopeMatch && (
+                <p className="error-message">Horoscope Match is required.</p>
+              )} */}
+            </div>
+
+            <div class="flex-item-left">
+              <label htmlFor="">Star</label>
+              <input type="text"
+              //  {...register("Star", { required: true })}
+                />
+              {/* {errors.Star && (
+                <p className="error-message">Star is required.</p>
+              )} */}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Expectation <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("Expectation", { required: true })}
+              />
+              {errors.Expectation && (
+                <p className="error-message">Expectation is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <label htmlFor="">
+                Annual Income <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("AnnualIncome", { required: true })}
+              />
+              {errors.AnnualIncome && (
+                <p className="error-message">Annual Income is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-left">
+              <label htmlFor="">
+                Marital Status <span>*</span>
+              </label>
+              <input
+                type="text"
+                {...register("MaritalStatus", { required: true })}
+              />
+              {errors.MaritalStatus && (
+                <p className="error-message">Marital Status is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-right">
+              <label htmlFor="">
+                Citizen <span>*</span>
+              </label>
+              <input type="text" {...register("Citizen", { required: true })} />
+              {errors.Citizen && (
+                <p className="error-message">Citizen is required.</p>
+              )}
+            </div>
+
+            <div class="flex-item-center">
+              <button className="submit-button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
     </div>
   );
 };
