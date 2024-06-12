@@ -18,21 +18,21 @@ const MatrimonialForm = () => {
     const updatedPersons = [...persons, data];
     setPersons(updatedPersons);
     localStorage.setItem("persons", JSON.stringify(updatedPersons));
-    reset(); // Resetting the form after submission
+    reset();
   };
 
   return (
-    <div className="form-container">
-      <header>MATRIMONIAL REGISTRATION FORM</header>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="matrimonial-form-container">
+      <header className="matrimonial-header">MATRIMONIAL REGISTRATION FORM</header>
+      <form onSubmit={handleSubmit(onSubmit)} className="matrimonial-form">
         <div className="personal-details">
           <p className="details-title">Personal Details</p>
           <div class="flex-container">
             <div className="flex-item-left">
-              <label htmlFor="firstName">
+              <label htmlFor="firstName"  className="matrimonial-label">
                 First Name <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 id="firstName"
                 {...register("firstName", {
@@ -49,10 +49,10 @@ const MatrimonialForm = () => {
             </div>
 
             <div className="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Last Name <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("lastName", { required: true, maxLength: 15 })}
               />
@@ -67,8 +67,8 @@ const MatrimonialForm = () => {
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">Date of Birth</label>
-              <input type="date" {...register("dob", { required: true })} />
+              <label htmlFor="" className="matrimonial-label">Date of Birth</label>
+              <input className="matrimonial-form-input" type="date" {...register("dob", { required: true })} />
               {errors.dob && (
                 <p className="error-message">Date Of birth is required.</p>
               )}
@@ -76,17 +76,17 @@ const MatrimonialForm = () => {
 
 
             <div class="flex-item-left">
-              <label htmlFor="">Age</label>
-              <input type="number" {...register("age", { required: true })} />
+              <label htmlFor="" className="matrimonial-label">Age</label>
+              <input className="matrimonial-form-input" type="number" {...register("age", { required: true })} />
               {errors.age && <p className="error-message">Age is required.</p>}
             </div>
 
 
            <div className="flex-item-center">
-        <label htmlFor="">
+        <label htmlFor="" className="matrimonial-label">
           Email Address <span>*</span>
         </label>
-        <input
+        <input className="matrimonial-form-input"
           type="email"
           {...register("email", {
             required: "Email is required.",
@@ -101,10 +101,10 @@ const MatrimonialForm = () => {
         )}
       </div>
             <div class="flex-item-right">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Education <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("education", { required: true })}
               />
@@ -113,8 +113,8 @@ const MatrimonialForm = () => {
               )}
             </div>
             <div className="flex-item-left">
-        <label htmlFor="">Mobile Number</label>
-        <input
+        <label htmlFor="" className="matrimonial-label">Mobile Number</label>
+        <input className="matrimonial-form-input"
           type="tel"
           {...register("mobile", {
             required: "Mobile Number is required.",
@@ -130,8 +130,8 @@ const MatrimonialForm = () => {
       </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">Gender</label>
-              <select {...register("gender", { required: true })}>
+              <label htmlFor="" className="matrimonial-label">Gender</label>
+              <select {...register("gender", { required: true })} className="matrimonial-select-input">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
@@ -142,10 +142,10 @@ const MatrimonialForm = () => {
             </div>
 
             <div class="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Occupation <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("occupation", { required: true })}
               />
@@ -159,42 +159,42 @@ const MatrimonialForm = () => {
           <p className="details-title">Astrological Details</p>
           <div class="flex-container">
             <div class="flex-item-left">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Raashi/Moon Sign <span>*</span>
               </label>
-              <input type="text" {...register("rashi", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("rashi", { required: true })} />
               {errors.rashi && (
                 <p className="error-message">Raashi/Moon Sign is required.</p>
               )}
             </div>
             <div class="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Dosham/Mangalik <span>*</span>
               </label>
-              <input type="text" {...register("dosham", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("dosham", { required: true })} />
               {errors.dosham && (
                 <p className="error-message">Dosham/Mangalik is required.</p>
               )}
             </div>
             <div class="flex-item-right">
-              <label htmlFor="">Eating Habit <span>*</span></label>
-              <input type="text" {...register("eating", { required: true })} />
+              <label htmlFor="" className="matrimonial-label">Eating Habit <span>*</span></label>
+              <input className="matrimonial-form-input" type="text" {...register("eating", { required: true })} />
               {errors.eating && (
                 <p className="error-message">Eating Habit is required.</p>
               )}
             </div>
             <div class="flex-item-left">
-              <label htmlFor="">Smoking Habit <span>*</span></label>
-              <input type="text" {...register("smoking", { required: true })} />
+              <label htmlFor="" className="matrimonial-label">Smoking Habit <span>*</span></label>
+              <input className="matrimonial-form-input" type="text" {...register("smoking", { required: true })} />
               {errors.smoking && (
                 <p className="error-message">Smoking Habit is required.</p>
               )}
             </div>
             <div class="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Drinking <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("drinking", { required: true })}
               />
@@ -203,25 +203,25 @@ const MatrimonialForm = () => {
               )}
             </div>
             <div class="flex-item-right">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Family Type <span>*</span>
               </label>
-              <input type="text" {...register("family", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("family", { required: true })} />
               {errors.family && (
                 <p className="error-message">Family Type is required.</p>
               )}
             </div>
             <div class="flex-item-left">
-              <label htmlFor="">Your Family Value <span>*</span> </label>
-              <input type="text" {...register("value", { required: true })} />
+              <label htmlFor="" className="matrimonial-label">Your Family Value <span>*</span> </label>
+              <input className="matrimonial-form-input" type="text" {...register("value", { required: true })} />
               {errors.value && (
                 <p className="error-message">Your Family Value is required.</p>
               )}
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">Your Family Status <span>*</span></label>
-              <input
+              <label htmlFor="" className="matrimonial-label">Your Family Status <span>*</span></label>
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("familyStatus", { required: true })}
               />
@@ -232,60 +232,60 @@ const MatrimonialForm = () => {
             </div>
 
             <div class="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Height <span>*</span>
               </label>
-              <input type="text" {...register("height", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("height", { required: true })} />
               {errors.height && (
                 <p className="error-message">Height is required.</p>
               )}
             </div>
 
             <div class="flex-item-left">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Weight <span>*</span>
               </label>
-              <input type="text" {...register("Weight", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("Weight", { required: true })} />
               {errors.Weight && (
                 <p className="error-message">Weight is required.</p>
               )}
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Country <span>*</span>
               </label>
-              <input type="text" {...register("Country", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("Country", { required: true })} />
               {errors.Country && (
                 <p className="error-message">Country is required.</p>
               )}
             </div>
 
             <div class="flex-item-center">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 State <span>*</span>
               </label>
-              <input type="text" {...register("State", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("State", { required: true })} />
               {errors.State && (
                 <p className="error-message">State is required.</p>
               )}
             </div>
 
             <div class="flex-item-left">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 About Me <span>*</span>
               </label>
-              <input type="text" {...register("AboutMe", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("AboutMe", { required: true })} />
               {errors.AboutMe && (
                 <p className="error-message">About Me is required.</p>
               )}
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Relegion <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("Relegion", { required: true })}
               />
@@ -298,7 +298,7 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Caste <span>*</span>
               </label>
-              <input type="text" {...register("Caste", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("Caste", { required: true })} />
               {errors.Caste && (
                 <p className="error-message">Caste is required.</p>
               )}
@@ -308,15 +308,15 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Gotra(m) <span>*</span>
               </label>
-              <input type="text" {...register("Gotra", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("Gotra", { required: true })} />
               {errors.Gotra && (
                 <p className="error-message">Gotra(m) is required.</p>
               )}
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">Mother Tongue</label>
-              <input
+              <label htmlFor="" className="matrimonial-label">Mother Tongue</label>
+              <input className="matrimonial-form-input"
                 type="text"
                 // {...register("MotherTongue", { required: true })}
               />
@@ -329,7 +329,7 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Horoscope Match
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 // {...register("HoroscopeMatch", { required: true })}
               />
@@ -340,7 +340,7 @@ const MatrimonialForm = () => {
 
             <div class="flex-item-left">
               <label htmlFor="">Star</label>
-              <input type="text"
+              <input className="matrimonial-form-input" type="text"
               //  {...register("Star", { required: true })}
                 />
               {/* {errors.Star && (
@@ -352,7 +352,7 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Expectation <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("Expectation", { required: true })}
               />
@@ -365,7 +365,7 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Annual Income <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("AnnualIncome", { required: true })}
               />
@@ -378,7 +378,7 @@ const MatrimonialForm = () => {
               <label htmlFor="">
                 Marital Status <span>*</span>
               </label>
-              <input
+              <input className="matrimonial-form-input"
                 type="text"
                 {...register("MaritalStatus", { required: true })}
               />
@@ -388,10 +388,10 @@ const MatrimonialForm = () => {
             </div>
 
             <div class="flex-item-right">
-              <label htmlFor="">
+              <label htmlFor="" className="matrimonial-label">
                 Citizen <span>*</span>
               </label>
-              <input type="text" {...register("Citizen", { required: true })} />
+              <input className="matrimonial-form-input" type="text" {...register("Citizen", { required: true })} />
               {errors.Citizen && (
                 <p className="error-message">Citizen is required.</p>
               )}

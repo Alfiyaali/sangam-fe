@@ -1,0 +1,149 @@
+.storypage-heading {
+    background-image: url('../../../../assets/images/storypage-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 204px;
+  }
+  
+  .storypage-title {
+    background-color: #FFEAF4;
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 12px 12px;
+  }
+  
+  .storypage-para {
+    background-color: #FFEAF4;
+    padding-top: 70px;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 150px;
+  }
+  
+  .stry-para {
+    width: 45%;
+    margin: auto;
+    line-height: 39px;
+  }
+
+  .storypage-footer-section {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    color: #4D4848;
+  }
+  
+  .storypage-footer-link {
+    color: #4D4848;
+    text-decoration: none;
+    padding-top: 5px;
+  }
+  
+  .stry-foot-sec {
+    padding: 80px;
+  }
+  
+  .stry-foot-head {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 900px) {
+    .storypage-footer-section {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .stry-foot-sec {
+      padding: 40px;
+    }
+  
+    .stry-foot-head {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .storypage-footer-section {
+        padding: 10px;
+        text-align: center;
+    }
+  
+    .storypage-footer-link {
+      padding-top: 3px;
+      font-size: 14px;
+    }
+  
+    .stry-foot-sec {
+      padding: 20px;
+    }
+  
+    .stry-foot-head {
+      font-size: 14px;
+    }
+  }
+  
+  /* Responsive CSS */
+  @media (max-width: 900px) {
+    .storypage-title {
+      width: 30%;
+      height: 50px;
+      font-size: 24px;
+      top: 25%;
+      left: 35%;
+      padding: 10px 10px;
+    }
+  
+    .stry-para {
+      width: 60%;
+      font-size: 18px;
+      line-height: 35px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .storypage-title {
+      width: 50%;
+      height: 40px;
+      font-size: 18px;
+      top: 23%;
+      left: 26.5%;
+      padding: 8px 8px;
+    }
+  
+    .stry-para {
+      width: 80%;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  
+    .storypage-para {
+      padding-top: 30px;
+    }
+  }
+  
+
+.storypage-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .storypage-footer {
+      flex-direction: column;
+    }
+  }

@@ -1,0 +1,232 @@
+/* Base CSS */
+#example1 {
+  width: 100%;
+  height: 200px;
+  background: url("../../../../assets/images/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-cont {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  top: 13%;
+  left: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+img {
+  margin: auto;
+}
+
+.logoName {
+  color: white;
+}
+
+.contact-heading {
+  color: black; /* Adjust text color */
+  background-color: white;
+  font-size: 2.5em; /* Initial font size */
+  text-align: center;
+  z-index: 2; /* Ensure the heading is above the background */
+  position: absolute;
+  left: 40%;
+  top: 22.8%;
+  border-radius: 37px 37px 0px 0px;
+  padding: 10px 50px;
+  margin: auto;
+}
+
+.form-container {
+  background-image: linear-gradient(to right top, #ffffff, #efd6fb, #f5a5e1, #ff6bae, #ff0666);
+  width: 100%;
+}
+
+.para {
+  width: 40%;
+  margin: auto;
+}
+
+.cover-paragraph {
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid #FF0666;
+}
+
+.info-icon {
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 100%;
+  color: #39D3D3;
+}
+
+.info-text {
+  color: #4D4848;
+  font-size: 16px;
+}
+
+.contact-info-box {
+  margin-top: 30px;
+}
+
+.form-containers {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  background: rgb(239, 144, 180);
+  background: linear-gradient(0deg, rgba(239, 144, 180) 0%, rgba(255,255,255,1) 91%);
+  opacity: 50;
+}
+
+.left-div,
+.right-div {
+  flex: 1;
+  padding: 20px;
+}
+
+/* src/ContactInfo.css */
+.contact-info {
+  width: 100%;
+  max-width: 400px; /* Adjust maximum width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.send-btn {
+  color: #4D4848;
+  padding-right: 10px;
+}
+
+.inpt-grp {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-grp {
+  float: right;
+  margin-right: 120px;
+}
+
+.sent-button {
+  width: 150px;
+  height: 50px;
+  float: right;
+  background-color: #39D3D3;
+  color: #4D4848;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px 0px #C0C0C059;
+}
+
+/* src/ContactForm.css */
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form .input-forms {
+  margin-bottom: 15px;
+  border: none;
+  font-size: 16px;
+  background-color: transparent !important;
+  border-bottom: 1px solid #4D5053;
+  width: 40%;
+  margin-left: 5px;
+  border-radius: 0 !important;
+  color: #4D5053;
+}
+
+.contact-form textarea {
+  width: 80% !important;
+  height: 150px; /* Adjust height as needed */
+}
+
+.input-forms {
+  border: none;
+}
+
+/* src/ContactPage.css */
+@media (max-width: 800px) {
+  #example1 {
+    height: 200px; /* Adjust height for smaller screens */
+    color: red;
+  }
+
+  .img-cont {
+    width: 100px; /* Adjust size for smaller screens */
+    height: 80px;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .contact-heading {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 5px 20px; /* Adjust padding for smaller screens */
+    left: 50%; /* Center horizontally */
+    top: 26%; /* Move below the image */
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 37px 37px 0px 0px;
+    padding: 10px 30px;
+    color: rebeccapurple;
+  }
+
+  .form-containers {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .left-div,
+  .right-div {
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px;
+  }
+
+  .contact-info {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .contact-form .input-forms,
+  .contact-form textarea {
+    width: 100% !important; /* Full width for inputs and textareas */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .sent-button {
+    width: 100%; /* Full width for the button */
+    height: 50px;
+    background-color: #39D3D3;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4.3px 8.61px 0px #C0C0C059;
+  }
+
+  .send-btn {
+    color: #ffffff;
+  }
+}
+

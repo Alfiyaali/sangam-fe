@@ -29,6 +29,8 @@ import SignupForm from "./app/modules/register/Register";
 import SerchPartner from "./app/modules/search/Search";
 import SearchResult from "./app/modules/search/searchresult/Searchresult"
 import MatrimonialForm from './shared/MatrimonialForm/MatrimonialForm';
+import ContactPage from './app/modules/contact/pages/ContactPage';
+import StoryPage from './app/modules/stories/pages/StoryPage';
 
 const App = () => (
 
@@ -57,6 +59,8 @@ const App = () => (
           <Route path="/search" element={<SerchPartner />} />
           <Route path="/search/search-result" element={<SearchResult />} />
           <Route path="/form" element={<MatrimonialForm />} />
+          <Route path="/contactpage" element={<ContactPage />} />
+          <Route path="/storypage" element={<StoryPage />} />
         
           <Route path="*" element={<Navigate to="/home" />} />
         </Routes>
